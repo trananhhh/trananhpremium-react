@@ -1,0 +1,50 @@
+@import url('../../index.css');
+
+.product-intro {
+    background-color: white;
+    margin: auto;
+    padding: 24px;
+    border-radius: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    width: 85%;
+
+    max-width: 360px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 64px;
+
+        &__text {
+            .title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 1.2;
+            }
+            .sub-title {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        &__logo {
+            max-height: 50px;
+            max-width: 50px;
+        }
+        margin-bottom: 18px;
+    }
+
+    .description {
+        display: flex;
+        width: 100%;
+        p {
+            font-size: 14px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+    }
+}

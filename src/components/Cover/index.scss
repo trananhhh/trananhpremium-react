@@ -1,0 +1,15 @@
+.product-cover {
+    height: 200px;
+    width: 100vw;
+    max-width: 500px;
+    margin: auto;
+    background-position: top;
+    background-size: cover;
+    border-radius: 0 0 24px 24px;
+    filter: brightness(0.75);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
