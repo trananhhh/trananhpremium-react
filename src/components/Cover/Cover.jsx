@@ -7,7 +7,7 @@ const Cover = ({ imageSrc }) => {
         <Box
             className="product-cover"
             backgroundImage={
-                process.env.PUBLIC_URL + '/assets/cover/spotify.png'
+                process.env.PUBLIC_URL + '/assets/cover/' + imageSrc
             }
         />
     );

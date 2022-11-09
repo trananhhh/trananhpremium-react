@@ -1,0 +1,103 @@
+{
+    "spotify": {
+        "title": "Spotify Premium",
+        "subtitle": "Nâng cấp trước, thanh toán sau.",
+        "description": "Spotify là một dịch vụ cung cấp nhạc, podcast và video kỹ thuật số cho phép bạn truy cập hàng triệu bài hát và các nội dung khác của các nghệ sĩ trên khắp thế giới.",
+        "logo": "spotify.png",
+        "cover": "spotify.png",
+        "primaryColor": "--green-spotify",
+        "data": [
+            {
+                "name": "Gói Tiết kiệm",
+                "minPrice": "từ 19",
+                "description": [
+                    "👏🏻 Nâng cấp tài khoản chính chủ",
+                    "👏🏻 Bảo hành đủ thời gian sử dụng",
+                    "👏🏻 Khắc phục lỗi trong vòng 24h",
+                    "👏🏻 Nói không với Token"
+                ],
+                "pricing": [
+                    { "duration": 2, "price": 50 },
+                    { "duration": 4, "price": 85, "oldPrice": 100 },
+                    { "duration": 8, "price": 155, "oldPrice": 200 }
+                ]
+            },
+            {
+                "name": "Gói Ổn định",
+                "minPrice": "từ 24",
+                "description": [
+                    "👏🏻 Nâng cấp tài khoản chính chủ",
+                    "👏🏻 Bảo hành đủ thời gian sử dụng",
+                    "👏🏻 KHÔNG lỗi trong quá trình sử dụng",
+                    "👏🏻 Nói không với Token"
+                ],
+                "pricing": [
+                    { "duration": 6, "price": 179 },
+                    { "duration": 12, "price": 319 },
+                    { "duration": 24, "price": 569 }
+                ]
+            }
+        ]
+    },
+    "netflix": {
+        "title": "Netflix",
+        "subtitle": "Xem phim không giới hạn",
+        "description": "Netflix là một dịch vụ xem video trực tuyến đến từ Mỹ, với kho video Netflix sở hữu cực “khủng”, chưa kể mọi video đều sở có bản quyền đầy đủ cùng chất lượng 4K.",
+        "logo": "netflix.png",
+        "cover": "netflix.jpg",
+        "primaryColor": "--red-netflix",
+        "data": [
+            {
+                "name": "Gói 2-End",
+                "minPrice": 80,
+                "description": [
+                    "👏🏻 Gói Premium xem phim chất lượng 4K",
+                    "👏🏻 Truy cập toàn bộ phim",
+                    "👏🏻 Đăng nhập trên 5 thiết bị",
+                    "👏🏻 Sở hữu Profile riêng",
+                    "👏🏻 Sử dụng ổn định, duy trì hàng tháng"
+                ],
+                "pricing": [
+                    { "duration": 1, "price": 80 },
+                    { "duration": 3, "price": 220, "oldPrice": 240 },
+                    { "duration": 6, "price": 420, "oldPrice": 480 },
+                    { "duration": 12, "price": 780, "oldPrice": 960 }
+                ]
+            },
+            {
+                "name": "Gói Standard",
+                "minPrice": 65,
+                "description": [
+                    "👏🏻 Gói Premium xem phim chất lượng 4K",
+                    "👏🏻 Truy cập toàn bộ phim",
+                    "👏🏻 Đăng nhập trên 3 thiết bị",
+                    "👏🏻 Sở hữu Profile riêng",
+                    "🚫 Có thể phải đổi account trong tháng"
+                ],
+                "pricing": [
+                    { "duration": 1, "price": 65 },
+                    { "duration": 3, "price": 185, "oldPrice": 195 },
+                    { "duration": 6, "price": 370, "oldPrice": 390 },
+                    { "duration": 12, "price": 660, "oldPrice": 780 }
+                ]
+            },
+            {
+                "name": "Gói 7Shared",
+                "minPrice": 40,
+                "description": [
+                    "👏🏻 Gói Premium xem phim chất lượng 4K",
+                    "👏🏻 Truy cập toàn bộ phim",
+                    "👏🏻 Đăng nhập trên 1 thiết bị",
+                    "🚫 Sử dụng Profile chung với người khác",
+                    "🚫 Có thể phải đổi account trong tháng",
+                    "🚫 Có thể bị quá tải thiết bị"
+                ],
+                "pricing": [
+                    { "duration": 1, "price": 40 },
+                    { "duration": 2, "price": 75, "oldPrice": 80 },
+                    { "duration": 3, "price": 140, "oldPrice": 160 }
+                ]
+            }
+        ]
+    }
+}

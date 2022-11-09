@@ -7,8 +7,8 @@ import ProductPlan from '../../components/ProductPlan/ProductPlan';
 import './index.scss';
 import data from '../../data.json';
 
-const Spotify = () => {
-    const spotifyData = data.spotify;
+const Netflix = () => {
+    const netflixData = data.netflix;
     return (
         <Box
             position="relative"
@@ -18,24 +18,24 @@ const Spotify = () => {
             flexDirection="column"
             alignItems="center"
         >
-            <Cover imageSrc={spotifyData.cover} />
+            <Cover imageSrc={netflixData.cover} />
             <ProductIntro
-                title={spotifyData.title}
-                subtitle={spotifyData.subtitle}
-                description={spotifyData.description}
+                title={netflixData.title}
+                subtitle={netflixData.subtitle}
+                description={netflixData.description}
                 imageSrc={
-                    process.env.PUBLIC_URL + 'assets/logo/' + spotifyData.logo
+                    process.env.PUBLIC_URL + 'assets/logo/' + netflixData.logo
                 }
             />
             <GroupBorder>
-                {spotifyData.data.map((plan) => (
+                {netflixData.data.map((plan) => (
                     <ProductPlan
                         key={plan.name}
                         name={plan.name}
                         minPrice={plan.minPrice}
                         description={plan.description}
                         pricing={plan.pricing}
-                        primaryColor={spotifyData.primaryColor}
+                        primaryColor={netflixData.primaryColor}
                     />
                 ))}
             </GroupBorder>
@@ -43,4 +43,4 @@ const Spotify = () => {
     );
 };
 
-export default Spotify;
+export default Netflix;

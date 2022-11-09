@@ -1,0 +1,635 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./public/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <title>𝗧𝗥𝗔𝗡𝗔𝗡𝗛𝗣𝗥𝗘𝗠𝗜𝗨𝗠</title>
+</head> -->
+
+<body class="transition-all select-none" draggable="false">
+    <div class="scroll-down-container fixed bottom-8 w-full flex justify-center z-10">
+        <a id="go-to-top"
+            class="fixed bottom-8 right-8 text-gray-200 bg-red-700 text-white rounded-full transition w-12 h-12 flex items-center justify-center z-10 opacity-0 md:w-16 md:h-16 hover:drop-shadow-xl transition-all ease-in-out drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
+            href='#section1'><i class="fa-solid fa-up-long text-lg md:text-2xl"></i>
+        </a>
+        <a id="scroll-down-hint"
+            class="animate-bounce trans text-gray-200 font-bold bg-red-700 text-white rounded-full transition px-4 h-12 flex items-center justify-center opacity-70 md:text-2xl md:p-8 lg:text-lg lg:p-6 hover:drop-shadow-xl transition-all ease-in-out drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
+            href='#direct-btn'><i class="fa-solid fa-down-long text-lg mr-4"></i> Kéo xuống </a>
+    </div>
+    <div id="navbar"
+        class="fixed h-20 top-0 inset-x-4 mx-auto flex items-center justify-center z-10 transition hidden md:flex opacity-0">
+        <div class="center rounded-full bg-white p-3 shadow-lg">
+            <a class="font-sans text-gray-600 font-semibold  text-md hover:bg-[#e5e7eb] hover:[#64748b] px-[12px] py-[6px] rounded-full transition"
+                href='#section2'>Giới
+                thiệu</a>
+            <a class="font-sans text-gray-600 font-semibold  text-md hover:bg-[#e5e7eb] hover:[#64748b] px-[12px] py-[6px] rounded-full transition"
+                href='#section3'>Sản
+                phẩm</a>
+            <a class=" font-sans text-gray-600 font-semibold  text-md hover:bg-[#e5e7eb] hover:[#64748b] px-[12px] py-[6px] rounded-full transition"
+                href='#section4'>Thành
+                viên</a>
+            <a class=" font-sans text-gray-600 font-semibold  text-md hover:bg-[#e5e7eb] hover:[#64748b] px-[12px] py-[6px] rounded-full transition"
+                href='#section6'>Cam
+                kết</a>
+            <a class=" font-sans bg-red-600 text-white font-semibold px-[18px] py-[6px] rounded-full transition shadow-lg"
+                href='#'>Liên hệ</a>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div class="">
+        <div class="section bg-[url('/public/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex flex-col pt-56 flex lg:pt-0 lg:justify-center"
+            id="section1">
+            <div class="flex flex-col justify-center ml-6 md:ml-10 lg:flex-row lg:mt-[-6rem]">
+                <div id="logo-section-1" class="img-container .reveal ml-[-2rem] md:ml-[-3.5rem]">
+                    <img class="max-h-36 md:max-h-64" src="./public/assets/logo-no-text.png" alt="logo-no-text"
+                        srcset="" draggable="false">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div
+                        class="main-text font-[billCorp] text-[12vw] mb-5 flex overflow-hidden h-16 md:h-36 lg:text-8xl">
+                        <h1 class="title .reveal">trananh</h1>
+                        <div class="box .reveal">
+                            <ul id="scroll-text-container" class="list-product opacity-50 ">
+                                <li class="title-ext">netflix</li>
+                                <li class="title-ext">spotify</li>
+                                <li class="title-ext">youtube</li>
+                                <li class="title-ext">grammarly</li>
+                                <li class="title-ext">spotify</li>
+                                <li class="title-ext">netflix</li>
+                                <li class="title-ext">premium</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="action-btns .reveal lg:mt-[-3rem]">
+                        <a class="bg-red-700 text-white p-4 rounded-full font-bold md:text-2xl md:px-8 md:py-6 lg:text-lg lg:px-5 lg:py-4 hover:drop-shadow-[0px_4px_16px_rgba(0,0,0,0.3)] transition-all ease-in-out"
+                            id="direct-btn" href="https://www.instagram.com/trananh.spotify/">
+                            <i class="fa-solid fa-message mr-2"></i>Nhắn tin ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div
+                class="min-h-[75vh] md:min-h-[65vh] flex flex-col px-8 mt-[-4rem] max-w-[1200px] mx-auto lg:mt-8 lg:min-h-[50vh]">
+                <div class="grid lg:grid-cols-7 grid-flow-row-dense lg:gap-x-8">
+                    <h1
+                        class="text-center font-bold mb-4 text-3xl lg:text-4xl md:text-5xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-3">
+                        Về
+                        <span
+                            class="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal">trananh<span
+                                class=" opacity-80 ml-0 pl-0">premium</span>
+                        </span>
+                    </h1>
+                    <div
+                        class="rounded-xl overflow-hidden .reveal drop-shadow-[-8px_8px_16px_rgba(0,0,0,0.25)] my-8 transition-all lg:order-1 lg:row-span-2 lg:h-full lg:my-0 lg:col-span-4">
+                        <img class="lg:object-cover md:h-[100%]" src="./public/assets/banner.png" alt="banner"
+                            srcset="">
+                    </div>
+                    <div
+                        class="transition-all bg-gray-200 p-4 rounded-xl max-h-fit ease-linear lg:order-3 float-top lg:col-span-3 shadow-inner">
+                        <i id="aboutUs" class="md:text-xl">Sử dụng các phần mềm, ứng dụng bản Crack gián tiếp gây ra rất
+                            nhiều vụ lộ dữ liệu nguy hiểm trong thời gian gần đây. Mặt khác, trải nghiệm người dùng của
+                            bản crack cũng không thể đầy đủ được như bản chính hãng.
+                            <br />
+                            <br />
+                            Do đó,
+                        </i>
+                        <span class="font-[billCorp] text-xl rounded-xl opacity-90">trananh<span
+                                class="opacity-80 ml-0 pl-0">premium</span>
+                        </span>
+                        <i id="aboutUs" class="md:text-xl">
+                            ra đời với mong muốn giúp người Việt tiếp cận với các phần mềm, ứng dụng bản quyền với giá
+                            rẻ
+                            hơn 20 - 90 % giá gốc.
+                        </i>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8 flex-col items-center lg:flex-row lg:mt-12">
+                    <p class="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl"><i
+                            class="text-red-600 mr-2 fa-solid fa-circle-check"></i>Tài
+                        khoản đầy đủ
+                        tính năng Premium
+                    </p>
+                    <p class="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl my-3 lg:mx-6"><i
+                            class="text-red-600 mr-2 fa-solid fa-circle-check"></i>Được update
+                        liên tục
+                        từ nhà phát
+                        hành
+                    </p>
+                    <p class="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl"><i
+                            class="text-red-600 mr-2 fa-solid fa-circle-check"></i>Được bảo hành bởi
+                        <span class="font-[billCorp] pt-2 py-1 rounded-xl opacity-90">trananh<span
+                                class="opacity-80 ml-0 pl-0">premium</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bg-[url('./public/assets/backgrounds/section-3.png')] bg-no-repeat bg-cover bg-top min-h-[140vh] md:min-h-[120vh] px-8 flex justify-center items-center lg:min-h-[145vh]"
+            id="section3">
+            <div class="flex-col flex justify-center items-center pt-8 max-w-[1200px] mx-auto lg:pt-0">
+                <div class="top-container flex items-center justify-center">
+                    <div class="text-container .reveal">
+                        <h1 id="product-title"
+                            class="text-center font-bold mb-4 text-gray-200 px-8 text-3xl md:text-5xl md:mb-12">Sản phẩm
+                            <span
+                                class="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal">trananh<span
+                                    class="opacity-70 mx-0 px-0">premium</span>
+                            </span>
+                            cung
+                            cấp
+                        </h1>
+                    </div>
+                </div>
+                <div class="mt-6 grid grid-cols-2 gap-4 md:gap-x-6 md:gap-y-8 md:grid-cols-3 lg:grid-cols-4 lg:mt-4">
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananh.netflixx/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/netflix.png" alt="netflix">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Netflix</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">40.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
+                                <i class="fa-solid fa-minus"></i>
+                                85%
+                            </span>
+                            <br />
+                            <del class="opacity-50">260.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananh.spotify/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/spotify.png" alt="netflix">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Spotify</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">19.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                68%</span>
+                            <br />
+                            <del class="opacity-50">59.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/youtube.png" alt="netflix">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Youtube Premium</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">16.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                95%</span>
+                            <br />
+                            <del class="opacity-50">276.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/grammarly.png" alt="netflix">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Grammarly</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">20.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                93%</span>
+                            <br />
+                            <del class="opacity-50">276.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/disney.png" alt="disney">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Disney+</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">35.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                81%</span>
+                            <br />
+                            <del class="opacity-50">185.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/canva.png" alt="canva">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Canva</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">5.500đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                95%</span>
+                            <br />
+                            <del class="opacity-50">110.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/office.png" alt="netflix">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Office 365</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">20.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                81%</span>
+                            <br />
+                            <del class="opacity-50">110.000đ</del>
+                        </div>
+                    </div>
+                    <div class="product-item cursor-pointer text-gray-200"
+                        onclick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();">
+                        <div
+                            class="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+                            <img src="./public/assets/logos/nordvpn.png" alt="netflix">
+                        </div>
+                        <h3 class="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">Nord VPN</h3>
+                        <div class="font-bold text-sm md:text-2xl lg:text-xl">
+                            <span class="product-item__price-main">30.000đ</span>
+                            <span
+                                class="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right"><i
+                                    class="fa-solid fa-minus"></i>
+                                90%</span>
+                            <br />
+                            <del class="opacity-50">276.000đ</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4">
+            <div
+                class="grid divide-y-4 px-10 py-12 md:grid-cols-3 md:divide-x-4 md:divide-y-0 max-w-[1200px] mx-auto lg:gap-x-0">
+                <div class="flex flex-col items-center justify-center mb-5">
+                    <div id="cus-count"
+                        class="font-black text-6xl mt-4 lg:text-8xl font-['Roboto Condensed'] anima-counter"
+                        data-anima-counter-start="0" data-anima-counter-duration="64" data-anima-counter-style="es-MX">
+                        6016</div>
+                    <p class="mt-5 text-md lg:text-xl">KHÁCH HÀNG SỬ DỤNG</p>
+                </div>
+                <div class="flex flex-col items-center justify-center mb-5">
+                    <div id="acc-count"
+                        class="font-black text-6xl mt-4 lg:text-8xl font-['Roboto Condensed'] anima-counter"
+                        data-anima-counter-start="0" data-anima-counter-duration="64" data-anima-counter-style="es-MX">
+                        8576</div>
+                    <p class="mt-5 text-md lg:text-xl">TÀI KHOẢN ĐƯỢC CẤP </p>
+                </div>
+                <div class="flex flex-col items-center justify-center mb-5">
+                    <div id="prd-count"
+                        class="font-black text-6xl mt-4 lg:text-8xl font-['Roboto Condensed'] anima-counter"
+                        data-anima-counter-start="-10" data-anima-counter-duration="2" data-anima-counter-style="es-MX">
+                        28</div>
+                    <p class="mt-5 text-md lg:text-xl">THÁNG HOẠT ĐỘNG</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="section5" class="flex items-center justify-center flex-col p-3">
+            <div class="bg-zinc-900 rounded-3xl px-4 py-10 w-full md:px-10 max-w-[1280px] mx-auto">
+                <div class="text-container .reveal">
+                    <h1 class="text-center font-bold mb-8 md:mb-12 text-3xl md:text-5xl text-gray-200 mx-8">Thành viên
+                        của
+                        <span
+                            class="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal">trananh<span
+                                class="opacity-70 mx-0 px-0">premium</span>
+                        </span>
+                    </h1>
+                </div>
+                <div
+                    class="member-container flex items-center justify-center mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-8">
+                    <a href="https://www.instagram.com/trananh.spotify/"
+                        class="member-item xl:justify-start xl:items-center xl:flex-row hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-col items-center hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition">
+                        <img draggable="false"
+                            class="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
+                            src="./public/assets/avatar/trananh.spotify.jpg" alt="">
+                        <div class="flex flex-col xl:items-start">
+                            <p
+                                class="member-item__title lg:mt-0 lg:text-lg font-bold text-center break-all text-white text-sm md:text-base font-[Roboto] mt-4 ">
+                                𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗦𝗣𝗢𝗧𝗜𝗙𝗬
+                            </p>
+                            <p
+                                class="member-item__username lg:text-lg text-center break-all text-white text-sm md:text-base font-[Roboto] ">
+                                @trananh.spotify
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/trananhpremium/"
+                        class="member-item xl:justify-start xl:items-center xl:flex-row hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-col items-center">
+                        <img draggable="false"
+                            class="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
+                            src="./public/assets/avatar/trananhpremium.png" alt="">
+                        <div class="flex flex-col xl:items-start">
+                            <p
+                                class="member-item__title lg:mt-0 lg:text-lg font-bold text-center break-all text-white text-sm md:text-base font-[Roboto] mt-4">
+                                𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗛𝗘𝗧
+                            </p>
+                            <p
+                                class="member-item__username lg:text-lg text-center break-all text-white text-sm md:text-base font-[Roboto]">
+                                @trananhpremium
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/trananh.netflixx/"
+                        class="member-item xl:justify-start xl:items-center xl:flex-row hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-col items-center">
+                        <img draggable="false"
+                            class="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
+                            src="./public/assets/avatar/trananh.netflixx.png" alt="">
+                        <div class="flex flex-col xl:items-start">
+                            <p
+                                class="member-item__title lg:mt-0 lg:text-lg font-bold text-center break-all text-white text-sm md:text-base font-[Roboto] mt-4">
+                                𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗡𝗘𝗧𝗙𝗟𝗜𝗫 </p>
+                            <p
+                                class="member-item__username lg:text-lg text-center break-all text-white text-sm md:text-base font-[Roboto]">
+                                @trananh.netflixx
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        class="member-item xl:justify-start xl:items-center xl:flex-row transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-co2 items-center deactivated opacity-50 flex flex-col items-center">
+                        <img draggable="false"
+                            class="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
+                            src="./public/assets/avatar/trananh.netflix.png" alt="">
+                        <div class="flex flex-col xl:items-start">
+                            <p
+                                class="member-item__title lg:mt-0 lg:text-lg font-bold text-center break-all text-white text-sm md:text-base font-[Roboto] mt-4">
+                                𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗡𝗘𝗧𝗙𝗟𝗜𝗫 </p>
+                            <p
+                                class="member-item__username lg:text-lg text-center break-all text-white text-sm md:text-base font-[Roboto]">
+                                @trananh.netflix
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/taikhoan.spotifypremium/"
+                        class="member-item xl:justify-start xl:items-center xl:flex-row hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-col items-center">
+                        <img draggable="false"
+                            class="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
+                            src="./public/assets/avatar/taikhoan.spotifypremium.jpg" alt="">
+                        <div class="flex flex-col xl:items-start">
+                            <p
+                                class="member-item__title lg:mt-0 lg:text-lg font-bold text-center break-all text-white text-sm md:text-base font-[Roboto] mt-4">
+                                Tài khoản SpotifyPremium
+                            </p>
+                            <p
+                                class="member-item__username lg:text-lg text-center break-all text-white text-sm md:text-base font-[Roboto]">
+                                @taikhoan.spotifypremium
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        class="member-item xl:justify-start xl:items-center xl:flex-row transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-co2 items-center deactivated opacity-50  flex flex-col items-center">
+                        <img draggable="false"
+                            class="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
+                            src="./public/assets/avatar/netflik.giagievai.jpg" alt="">
+                        <div class="flex flex-col xl:items-start">
+                            <p
+                                class="member-item__title lg:mt-0 lg:text-lg font-bold text-center break-all text-white text-sm md:text-base font-[Roboto] mt-4">
+                                Netflik giá giẻ vải </p>
+                            <p
+                                class="member-item__username lg:text-lg text-center break-all text-white text-sm md:text-base font-[Roboto]">
+                                @netflik.giagievai
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="section6" class="flex items-center justify-center flex-col pt-10 px-8 max-w-[1200px] mx-auto lg:px-0">
+            <div class="text-container .reveal">
+                <h1 class="text-center font-bold mb-8 text-3xl lg:text-4xl md:text-5xl">Cam kết từ chúng tôi</h1>
+            </div>
+            <div class="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+                <div class="rounded-3xl px-3 bg-white flex items-center justify-center flex-col overflow-hidden">
+                    <div class="h-auto flex items-center justify-center ">
+                        <lottie-player class="ml-[-36px]" src="./public/assets/lottie/process.json"
+                            background="transparent" speed="1" style="width: 500px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="text-container py-8 px-3 pt-0 text-center">
+                        <h3 class="guarantee-item__title font-bold text-3xl">Xử lí<br />nhanh chóng
+                        </h3>
+                        <p class="guarantee-item__description mt-4 tracking-tight text-center leading-8 text-xl">
+                            Giao tài khoản ngay trong vòng 1h sau khi nhận được thanh toán.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl px-3 bg-white flex items-center justify-center flex-col overflow-hidden">
+                    <div class="h-auto flex items-center justify-center ">
+                        <lottie-player src="https://lottie.host/2fe52d38-7b4c-4b58-880d-387bb2f8318a/3L05JO3KMd.json"
+                            background="transparent" speed="1" style="width: 360px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="text-container py-8 px-3 pt-0 text-center">
+                        <h3 class="guarantee-item__title font-bold text-3xl">Ổn định<br />nhất thị trường </h3>
+                        <p class="guarantee-item__description mt-4 tracking-tight text-center leading-8 text-xl">
+                            Cam kết giá rẻ và ổn định nhất thị trường, tiết kiệm lên đến 90% so với giá gốc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl px-3 bg-white flex items-center justify-center flex-col overflow-hidden">
+                    <div class="h-auto flex items-center justify-center ">
+                        <lottie-player src="./public/assets/lottie/stable.json" background="transparent" speed="1"
+                            style="width: 240px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="text-container py-8 px-3 pt-0 text-center">
+                        <h3 class="guarantee-item__title font-bold text-3xl">Bảo hành<br />1 đổi 1
+                        </h3>
+                        <p class="guarantee-item__description mt-4 tracking-tight text-center leading-8 text-xl">
+                            Nâng cấp lại hoặc đổi tài khoản mới ngay lập tức nếu tài khoản phát sinh lỗi.
+                        </p>
+                    </div>
+                </div>
+                <div class="rounded-3xl px-3 bg-white flex items-center justify-center flex-col overflow-hidden">
+                    <div class="h-auto flex items-center justify-center mt-6 mb-10">
+                        <lottie-player src="./public/assets/lottie/support.json" background="transparent" speed="1"
+                            style="width: 240px; height: 240px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="text-container py-8 px-3 pt-0 text-center">
+                        <h3 class="guarantee-item__title font-bold text-3xl">Sẵn sàng<br />hỗ trợ
+                        </h3>
+                        <p class="guarantee-item__description mt-4 tracking-tight text-center leading-8 text-xl">
+                            Chúng tôi sẵn sàng hỗ trợ mọi khó khăn trong quá trình sử dụng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex items-center justify-center flex-col mt-20">
+            <div class="grid gap-8 px-8 md:grid-cols-2 lg:grid-cols-7 max-w-[1280px] mx-auto">
+                <div class="md:row-span-2 lg:row-span-1 lg:col-span-3 lg:pr-20">
+                    <div class="md:mb-8 lg:mb-0">
+                        <img class="scale-110 mt-[-40px]" src="./public/assets/LOGO-dark.png" alt="">
+                    </div>
+                    <p
+                        class="border-l-4 border-red-700 text-lg tracking-tigh italic leading-6 text-justify bg-gray-200 rounded-2xl p-6">
+                        Sứ
+                        mệnh của
+                        <span class="font-[billCorp] pt-2 py-1 rounded-xl opacity-90">trananh<span
+                                class="opacity-80 ml-0 pl-0">premium</span>
+                        </span> là đem
+                        đến cho
+                        người Việt cơ
+                        hội tiếp cận
+                        với các
+                        công cụ phục vụ làm
+                        việc, học tập, giải trí với giá rẻ hơn lên đến 90% so với giá gốc.
+                    </p>
+                </div>
+                <div class="md:mt-12 lg:mt-0 lg:col-span-2">
+                    <h4 class="border-l-4 border-red-700 pl-2 text-xl font-bold mb-4">Liên hệ</h4>
+                    <p>Hotline: <a href="tel:0982202602" class="font-bold">0982.202.602</a></p>
+                    <p>Email: <a href="mailto:support@trananhpremium.com"
+                            class="font-bold">support@trananhpremium.com</a>
+                    </p>
+                </div>
+                <div class="w-full lg:col-span-2">
+                    <h4 class="border-l-4 border-red-700 pl-2 text-xl font-bold mb-4">Nhận thông tin ưu đãi mới nhất
+                    </h4>
+                    <div class="w-full md:flex lg:flex-col">
+                        <div class="max-w-20">
+                            <input class="px-4 py-3 rounded-xl mb-4 w-full" type="text" name="name"
+                                placeholder="Nhập Tên của bạn">
+                            <input class="px-4 py-3 rounded-xl mb-4 w-full" type="text" name="name"
+                                placeholder="Nhập Email của bạn">
+                        </div>
+                        <button
+                            class="bg-red-700 text-white px-4 py-4 rounded-full font-bold md:w-[240px] md:h-[48px] md:ml-4 md:py-2 lg:w-[140px] lg:ml-0 hover:drop-shadow-xl transition-all ease-in-out">
+                            <i class=" fa-solid fa-paper-plane mr-2"></i>Đăng ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <span class="text-xs md:text-base text-gray-600 pb-12 pt-8 px-12 text-center">© 2020 by
+                <span class="font-[billCorp] rounded-xl opacity-90">trananh<span
+                        class="opacity-80 ml-0 pl-0">premium</span>
+                </span>. All Rights
+                Reserved.</span>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/anima-counters@1.1.1/dist/index.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<!-- <script>
+    ScrollReveal({
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+        viewport: document.getElementById('fullpage')
+    });
+
+    ScrollReveal().reveal('#logo-section-1', { delay: 200, origin: 'top', duration: 500 });
+    ScrollReveal().reveal('.title', { delay: 300, origin: 'bottom' });
+    ScrollReveal().reveal('.box', { delay: 400, origin: 'bottom' });
+    ScrollReveal().reveal('.action-btns', { delay: 1200, origin: 'bottom' });
+    ScrollReveal().reveal('.section-2 .img-container', { origin: 'bottom', duration: 800 });
+    ScrollReveal().reveal('.section-2 .text-container', { origin: 'right', duration: 1000 });
+    ScrollReveal().reveal('.section-2 .bottom-container p', { origin: 'bottom', duration: 1000, interval: 300 });
+    ScrollReveal().reveal('#section3 .section-title', { origin: 'top', duration: 500 });
+    ScrollReveal().reveal('.product-item', { origin: 'bottom', duration: 1000, interval: 300, delay: 500 });
+
+    initAnimaCounter();
+
+    function scrollToTarget(target) {
+        document.querySelector(target).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+    $('a[href*="#"]')
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function () {
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+    const goToTopBtn = document.getElementById('go-to-top');
+    const navbar = document.getElementById('navbar');
+    const scrollDownHint = document.getElementById('scroll-down-hint');
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            goToTopBtn.style.opacity = 1;
+            navbar.style.opacity = 1;
+            scrollDownHint.style.opacity = 0;
+        } else {
+            goToTopBtn.style.opacity = 0;
+            navbar.style.opacity = 0;
+            scrollDownHint.style.opacity = 1;
+        }
+    }
+</script>
+
+</html> -->

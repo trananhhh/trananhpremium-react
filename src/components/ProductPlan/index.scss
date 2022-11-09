@@ -34,7 +34,7 @@
         }
 
         .price {
-            background-color: var(--green-spotify);
+            background-color: var(--props-color);
             color: white;
             font-weight: 800;
             font-size: 14px;
@@ -75,11 +75,18 @@
     }
 
     &__price {
-        background-color: var(--green-spotify);
+        background-color: var(--props-color);
         color: white;
         font-weight: 800;
-        font-size: 16px;
-        padding: 6px 14px;
-        border-radius: 24px;
+        font-size: 14px;
+        padding: 4px 12px;
+        border-radius: 32px;
+        &-container {
+            display: flex;
+            flex-direction: column;
+            .old-price {
+                font-size: 13px;
+            }
+        }
     }
 }

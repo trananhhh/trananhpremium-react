@@ -1,5 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700;900&display=swap');
 
+/* #eb4340 */
+@font-face {
+    font-family: 'billCorp';
+    src: local('billcorpnar-extrabold'),
+        url('./assets/billcorpnar-extrabold.ttf') format('woff');
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +20,7 @@
     --text-dark-color: #2f2f2f;
     --box-shadow: 0 0 36px #2f2f2f42;
     --green-spotify: #2ce271;
+    --red-netflix: #e50a15;
 }
 
 body {
@@ -24,4 +35,43 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+html {
+    background-color: #f2f2f2;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #303030;
+}
+
+#scroll-text-container {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation: scrollUp 3s ease-in-out normal;
+    animation: scrollUp 3s ease normal forwards;
+}
+
+@-webkit-keyframes scrollUp {
+    from {
+        -webkit-transform: translateY(0.5%);
+        transform: translateY(0.5%);
+    }
+    to {
+        -webkit-transform: translateY(-85.75%);
+        transform: translateY(-85.75%);
+    }
+}
+
+@keyframes scrollUp {
+    from {
+        -webkit-transform: translateY(0.5%);
+        transform: translateY(0.5%);
+    }
+    to {
+        -webkit-transform: translateY(-85.75%);
+        transform: translateY(-85.75%);
+    }
 }

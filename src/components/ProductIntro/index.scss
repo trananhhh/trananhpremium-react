@@ -10,7 +10,7 @@
     flex-direction: column;
     box-shadow: var(--box-shadow);
     width: 85%;
-
+    z-index: 1;
     max-width: 360px;
 
     .header {
@@ -34,6 +34,10 @@
         &__logo {
             max-height: 50px;
             max-width: 50px;
+            img {
+                min-height: 48px;
+                min-width: 48px;
+            }
         }
         margin-bottom: 18px;
     }
