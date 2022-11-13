@@ -1,65 +1,153 @@
-[
-    {
-        "productName": "Netflix",
-        "route": "/netflix",
-        "image": "netflix.png",
-        "price": 40,
-        "oldPrice": 260
-    },
+{
+    "products": [
+        {
+            "productName": "Netflix",
+            "route": "/netflix",
+            "image": "netflix.png",
+            "price": 40,
+            "oldPrice": 260
+        },
 
-    {
-        "productName": "Spotify",
-        "route": "/spotify",
-        "image": "spotify.png",
-        "price": 19,
-        "oldPrice": 59
-    },
+        {
+            "productName": "Spotify",
+            "route": "/spotify",
+            "image": "spotify.png",
+            "price": 19,
+            "oldPrice": 59
+        },
 
-    {
-        "productName": "Youtube Premium",
-        "route": "/youtube",
-        "image": "youtube.png",
-        "price": 32,
-        "oldPrice": 276
-    },
+        {
+            "productName": "Youtube Premium",
+            "route": "/youtube",
+            "image": "youtube.png",
+            "price": 32,
+            "oldPrice": 276
+        },
 
-    {
-        "productName": "Grammarly",
-        "insta": "trananhpremium",
-        "image": "grammarly.png",
-        "price": 20,
-        "oldPrice": 276
-    },
+        {
+            "productName": "Grammarly",
+            "insta": "trananhpremium",
+            "image": "grammarly.png",
+            "price": 20,
+            "oldPrice": 276
+        },
 
-    {
-        "productName": "Disney+",
-        "insta": "trananhpremium",
-        "image": "disney.png",
-        "price": 35,
-        "oldPrice": 185
-    },
+        {
+            "productName": "Disney+",
+            "insta": "trananhpremium",
+            "image": "disney.png",
+            "price": 35,
+            "oldPrice": 185
+        },
 
-    {
-        "productName": "Canva",
-        "insta": "trananhpremium",
-        "image": "canva.png",
-        "price": 6,
-        "oldPrice": 110
-    },
+        {
+            "productName": "Canva",
+            "insta": "trananhpremium",
+            "image": "canva.png",
+            "price": 6,
+            "oldPrice": 110
+        },
 
-    {
-        "productName": "Office 365",
-        "insta": "trananhpremium",
-        "image": "office.png",
-        "price": 20,
-        "oldPrice": 110
-    },
+        {
+            "productName": "Office 365",
+            "insta": "trananhpremium",
+            "image": "office.png",
+            "price": 20,
+            "oldPrice": 110
+        },
 
-    {
-        "productName": "Nord VPN",
-        "insta": "trananhpremium",
-        "image": "nordvpn.png",
-        "price": 30,
-        "oldPrice": 276
-    }
-]
+        {
+            "productName": "Nord VPN",
+            "insta": "trananhpremium",
+            "image": "nordvpn.png",
+            "price": 30,
+            "oldPrice": 276
+        }
+    ],
+    "statistics": [
+        {
+            "title": "KHÁCH HÀNG SỬ DỤNG",
+            "number": 6289
+        },
+        {
+            "title": "TÀI KHOẢN ĐƯỢC CẤP",
+            "number": 8548
+        },
+        {
+            "title": "THÁNG HOẠT ĐỘNG",
+            "number": 32
+        }
+    ],
+    "members": [
+        {
+            "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗦𝗣𝗢𝗧𝗜𝗙𝗬",
+            "username": "trananh.spotify",
+            "imageSrc": "trananh.spotify.jpg",
+            "disable": false
+        },
+        {
+            "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗛𝗘𝗧",
+            "username": "trananhpremium",
+            "imageSrc": "trananhpremium.png",
+            "disable": false
+        },
+        {
+            "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗡𝗘𝗧𝗙𝗟𝗜𝗫",
+            "username": "trananh.netflixx",
+            "imageSrc": "trananh.netflixx.png",
+            "disable": false
+        },
+        {
+            "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗡𝗘𝗧𝗙𝗟𝗜𝗫",
+            "username": "trananh.netflix",
+            "imageSrc": "trananh.netflix.png",
+            "disable": true
+        },
+        {
+            "name": "Tài khoản Spotify Premium",
+            "username": "taikhoan.spotifypremium",
+            "imageSrc": "taikhoan.spotifypremium.jpg",
+            "disable": false
+        },
+        {
+            "name": " Netflik giá giẻ vải",
+            "username": "netflik.giagievai",
+            "imageSrc": "netflik.giagievai.jpg",
+            "disable": true
+        }
+    ],
+    "commitments": [
+        {
+            "titleF": "Xử lí",
+            "titleS": "nhanh chóng",
+            "subtitle": "Giao tài khoản ngay trong vòng 1h sau khi nhận được thanh toán.",
+            "mediaSrc": "process",
+            "width": 500,
+            "height": 300
+        },
+        {
+            "titleF": "Ổn định nhất",
+            "titleS": "thị trường",
+            "subtitle": "Cam kết giá rẻ và ổn định nhất thị trường, tiết kiệm lên đến 90% so với giá gốc.",
+            "mediaSrc": "stable",
+            "width": 360,
+            "height": 300
+        },
+        {
+            "titleF": "Bảo hành",
+            "titleS": "1 đổi 1",
+            "subtitle": " Nâng cấp lại hoặc đổi tài khoản mới ngay lập tức nếu tài khoản phát sinh lỗi.",
+            "mediaSrc": "warranty",
+            "width": 240,
+            "height": 300
+        },
+        {
+            "titleF": "Sẵn sàng",
+            "titleS": "hỗ trợ",
+            "subtitle": "Chúng tôi sẵn sàng hỗ trợ mọi khó khăn trong quá trình sử dụng.",
+            "mediaSrc": "support",
+            "width": 240,
+            "height": 300
+        }
+    ]
+}
