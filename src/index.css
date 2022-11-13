@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'billCorp';
     src: local('billcorpnar-extrabold'),
-        url('./assets/billcorpnar-extrabold.ttf') format('woff');
+        url('./fonts/billcorpnar-extrabold.ttf') format('woff');
 }
 * {
     margin: 0;
@@ -30,6 +30,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #f2f2f2;
     color: var(--text-dark-color);
+    overflow-x: hidden;
 }
 
 code {

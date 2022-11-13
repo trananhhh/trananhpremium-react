@@ -1,41 +1,38 @@
-import NavBar from '../../components/NavBar/NavBar';
+import React from 'react';
+import HomeProductItem from '../../components/HomeProductItem/HomeProductItem';
+import { RouteConfig } from '../../router';
 
-// var __html = require('./index.html');
-// var template = { __html: __html };
+import data from '../../home-data.json';
 
 function Home() {
     return (
-        <div>
-            <NavBar />
-        </div>
-    );
-}
-
-export default Home;
-
-/**
- * 
-        <div className="transition-all select-none" draggable="false">
-            <div className="scroll-down-container fixed bottom-8 w-full flex justify-center z-10">
-                <a
-                    id="go-to-top"
-                    className="fixed bottom-8 right-8 text-gray-200 bg-red-700 text-white rounded-full transition w-12 h-12 flex items-center justify-center z-10 opacity-0 md:w-16 md:h-16 hover:drop-shadow-xl transition-all ease-in-out drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
-                    href="#section1"
-                >
-                    <i className="fa-solid fa-up-long text-lg md:text-2xl"></i>
-                </a>
-                <a
-                    id="scroll-down-hint"
-                    className="animate-bounce trans text-gray-200 font-bold bg-red-700 text-white rounded-full transition px-4 h-12 flex items-center justify-center opacity-70 md:text-2xl md:p-8 lg:text-lg lg:p-6 hover:drop-shadow-xl transition-all ease-in-out drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
-                    href="#direct-btn"
-                >
-                    <i className="fa-solid fa-down-long text-lg mr-4"></i> Kéo
-                    xuống
-                </a>
+        <div className="bg-[#f2f2f2]">
+            <div className="transition-all select-none" draggable="false">
+                <div className="scroll-down-container fixed bottom-8 w-full flex justify-center z-10">
+                    <a
+                        id="go-to-top"
+                        className="fixed bottom-8 right-8 text-gray-200 bg-red-700 text-white rounded-full transition w-12 h-12 flex items-center justify-center z-10 opacity-0 md:w-16 md:h-16 hover:drop-shadow-xl transition-all ease-in-out drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
+                        href="#section1"
+                    >
+                        <i className="fa-solid fa-up-long text-lg md:text-2xl"></i>
+                    </a>
+                    <a
+                        id="scroll-down-hint"
+                        className="animate-bounce trans text-gray-200 font-bold bg-red-700 text-white rounded-full transition px-4 h-12 flex items-center justify-center opacity-70 md:text-2xl md:p-8 lg:text-lg lg:p-6 hover:drop-shadow-xl transition-all ease-in-out drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
+                        href="#direct-btn"
+                    >
+                        <i className="fa-solid fa-down-long text-lg mr-4"></i>{' '}
+                        Kéo xuống
+                    </a>
+                </div>
             </div>
-            <div className="">
+            <div>
                 <div
-                    className="section bg-[url('/public/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex flex-col pt-56 flex lg:pt-0 lg:justify-center"
+                    className={
+                        'section bg-[url(' +
+                        process.env.PUBLIC_URL +
+                        "'/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex flex-col pt-56 flex lg:pt-0 lg:justify-center"
+                    }
                     id="section1"
                 >
                     <div className="flex flex-col justify-center ml-6 md:ml-10 lg:flex-row lg:mt-[-6rem]">
@@ -45,14 +42,17 @@ export default Home;
                         >
                             <img
                                 className="max-h-36 md:max-h-64"
-                                src="./public/assets/logo-no-text.png"
+                                src={
+                                    process.env.PUBLIC_URL +
+                                    '/assets/logo-no-text.png'
+                                }
                                 alt="logo-no-text"
                                 srcSet=""
                                 draggable="false"
                             />
                         </div>
                         <div className="flex flex-col justify-center">
-                            <div className="main-text font-[billCorp] text-[12vw] mb-5 flex overflow-hidden h-16 md:h-36 lg:text-8xl">
+                            <div className="main-text font-[billCorp] text-[12vw] mb-5 flex overflow-hidden h-24 md:h-36 lg:text-8xl">
                                 <h1 className="title .reveal">trananh</h1>
                                 <div className="box .reveal">
                                     <ul
@@ -88,7 +88,7 @@ export default Home;
                         <div className="grid lg:grid-cols-7 grid-flow-row-dense lg:gap-x-8">
                             <h1 className="text-center font-bold mb-4 text-3xl lg:text-4xl md:text-5xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-3">
                                 Về
-                                <span className="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal">
+                                <span className="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal ml-2">
                                     trananh
                                     <span className=" opacity-80 ml-0 pl-0">
                                         premium
@@ -98,7 +98,10 @@ export default Home;
                             <div className="rounded-xl overflow-hidden .reveal drop-shadow-[-8px_8px_16px_rgba(0,0,0,0.25)] my-8 transition-all lg:order-1 lg:row-span-2 lg:h-full lg:my-0 lg:col-span-4">
                                 <img
                                     className="lg:object-cover md:h-[100%]"
-                                    src="./public/assets/banner.png"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/banner.png'
+                                    }
                                     alt="banner"
                                     srcSet=""
                                 />
@@ -114,7 +117,7 @@ export default Home;
                                     <br />
                                     Do đó,
                                 </i>
-                                <span className="font-[billCorp] text-xl rounded-xl opacity-90">
+                                <span className="font-[billCorp] text-xl rounded-xl opacity-90 mr-1">
                                     trananh
                                     <span className="opacity-80 ml-0 pl-0">
                                         premium
@@ -139,7 +142,7 @@ export default Home;
                             <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
                                 <i className="text-red-600 mr-2 fa-solid fa-circle-check"></i>
                                 Được bảo hành bởi
-                                <span className="font-[billCorp] pt-2 py-1 rounded-xl opacity-90">
+                                <span className="font-[billCorp] pt-2 py-1 rounded-xl opacity-90 ml-1">
                                     trananh
                                     <span className="opacity-80 ml-0 pl-0">
                                         premium
@@ -151,228 +154,44 @@ export default Home;
                 </div>
 
                 <div
-                    className="section bg-[url('./public/assets/backgrounds/section-3.png')] bg-no-repeat bg-cover bg-top min-h-[140vh] md:min-h-[120vh] px-8 flex justify-center items-center lg:min-h-[145vh]"
+                    className={
+                        'section bg-[url(' +
+                        process.env.PUBLIC_URL +
+                        "'/assets/backgrounds/section-3.png')] bg-no-repeat bg-cover bg-top min-h-[140vh] md:min-h-[120vh] px-8 flex justify-center items-center lg:min-h-[145vh]"
+                    }
                     id="section3"
                 >
-                    <div className="flex-col flex justify-center items-center pt-8 max-w-[1200px] mx-auto lg:pt-0">
-                        <div className="top-container flex items-center justify-center">
-                            <div className="text-container .reveal">
+                    <div className="flex-col flex justify-center items-center pt-8 max-w-[1200px] mx-auto lg:pt-0 w-full">
+                        <div className="top-container flex items-center justify-center w-full">
+                            <div className="text-container .reveal w-full">
                                 <h1
                                     id="product-title"
                                     className="text-center font-bold mb-4 text-gray-200 px-8 text-3xl md:text-5xl md:mb-12"
                                 >
                                     Sản phẩm
-                                    <span className="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal">
+                                    <br />
+                                    <span className="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal mx-1">
                                         trananh
                                         <span className="opacity-70 mx-0 px-0">
                                             premium
                                         </span>
                                     </span>
+                                    <br />
                                     cung cấp
                                 </h1>
                             </div>
                         </div>
                         <div className="mt-6 grid grid-cols-2 gap-4 md:gap-x-6 md:gap-y-8 md:grid-cols-3 lg:grid-cols-4 lg:mt-4">
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananh.netflixx/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/netflix.png"
-                                        alt="netflix"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Netflix
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        40.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        85%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">260.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananh.spotify/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/spotify.png"
-                                        alt="netflix"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Spotify
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        19.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        68%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">59.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/youtube.png"
-                                        alt="netflix"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Youtube Premium
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        16.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        95%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">276.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/grammarly.png"
-                                        alt="netflix"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Grammarly
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        20.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        93%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">276.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/disney.png"
-                                        alt="disney"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Disney+
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        35.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        81%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">185.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/canva.png"
-                                        alt="canva"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Canva
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        5.500đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        95%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">110.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/office.png"
-                                        alt="netflix"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Office 365
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        20.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        81%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">110.000đ</del>
-                                </div>
-                            </div>
-                            <div
-                                className="product-item cursor-pointer text-gray-200"
-                                onClick="window.open('https://www.instagram.com/trananhpremium/', '_blank').focus();"
-                            >
-                                <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
-                                    <img
-                                        src="./public/assets/logos/nordvpn.png"
-                                        alt="netflix"
-                                    />
-                                </div>
-                                <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                                    Nord VPN
-                                </h3>
-                                <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                                    <span className="product-item__price-main">
-                                        30.000đ
-                                    </span>
-                                    <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right">
-                                        <i className="fa-solid fa-minus"></i>
-                                        90%
-                                    </span>
-                                    <br />
-                                    <del className="opacity-50">276.000đ</del>
-                                </div>
-                            </div>
+                            {data.map((item) => (
+                                <HomeProductItem
+                                    insta={item.insta}
+                                    route={item.route}
+                                    image={item.image}
+                                    productName={item.productName}
+                                    price={item.price}
+                                    oldPrice={item.oldPrice}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -448,7 +267,10 @@ export default Home;
                                 <img
                                     draggable="false"
                                     className="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
-                                    src="./public/assets/avatar/trananh.spotify.jpg"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/avatar/trananh.spotify.jpg'
+                                    }
                                     alt=""
                                 />
                                 <div className="flex flex-col xl:items-start">
@@ -467,7 +289,10 @@ export default Home;
                                 <img
                                     draggable="false"
                                     className="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
-                                    src="./public/assets/avatar/trananhpremium.png"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/avatar/trananhpremium.png'
+                                    }
                                     alt=""
                                 />
                                 <div className="flex flex-col xl:items-start">
@@ -486,7 +311,10 @@ export default Home;
                                 <img
                                     draggable="false"
                                     className="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
-                                    src="./public/assets/avatar/trananh.netflixx.png"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/avatar/trananh.netflixx.png'
+                                    }
                                     alt=""
                                 />
                                 <div className="flex flex-col xl:items-start">
@@ -498,11 +326,17 @@ export default Home;
                                     </p>
                                 </div>
                             </a>
-                            <a className="member-item xl:justify-start xl:items-center xl:flex-row transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-co2 items-center deactivated opacity-50 flex flex-col items-center">
+                            <a
+                                href="https://www.instagram.com/trananh.netflixx/"
+                                className="member-item xl:justify-start xl:items-center xl:flex-row transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-co2 items-center deactivated opacity-50 flex flex-col items-center"
+                            >
                                 <img
                                     draggable="false"
                                     className="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
-                                    src="./public/assets/avatar/trananh.netflix.png"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/avatar/trananh.netflix.png'
+                                    }
                                     alt=""
                                 />
                                 <div className="flex flex-col xl:items-start">
@@ -521,7 +355,10 @@ export default Home;
                                 <img
                                     draggable="false"
                                     className="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
-                                    src="./public/assets/avatar/taikhoan.spotifypremium.jpg"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/avatar/taikhoan.spotifypremium.jpg'
+                                    }
                                     alt=""
                                 />
                                 <div className="flex flex-col xl:items-start">
@@ -533,11 +370,17 @@ export default Home;
                                     </p>
                                 </div>
                             </a>
-                            <a className="member-item xl:justify-start xl:items-center xl:flex-row transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-co2 items-center deactivated opacity-50  flex flex-col items-center">
+                            <a
+                                href="https://www.instagram.com/trananh.netflixx/"
+                                className="member-item xl:justify-start xl:items-center xl:flex-row transition bg-zinc-800 px-2 py-4 min-h-full rounded-2xl flex flex-co2 items-center deactivated opacity-50  flex flex-col items-center"
+                            >
                                 <img
                                     draggable="false"
                                     className="member-item__ava lg:max-h-28 mx-2 max-h-40 max-w-full w-auto h-auto select-none rounded-full border-4 border-gray-300"
-                                    src="./public/assets/avatar/netflik.giagievai.jpg"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/avatar/netflik.giagievai.jpg'
+                                    }
                                     alt=""
                                 />
                                 <div className="flex flex-col xl:items-start">
@@ -567,10 +410,14 @@ export default Home;
                             <div className="h-auto flex items-center justify-center ">
                                 <lottie-player
                                     className="ml-[-36px]"
-                                    src="./public/assets/lottie/process.json"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/lottie/process.json'
+                                    }
                                     background="transparent"
                                     speed="1"
-                                    style="width: 500px; height: 300px;"
+                                    // stylewidth: 500px; height: 300px;"
+                                    style={{ width: 500, height: 300 }}
                                     loop
                                     autoplay
                                 ></lottie-player>
@@ -594,7 +441,7 @@ export default Home;
                                     src="https://lottie.host/2fe52d38-7b4c-4b58-880d-387bb2f8318a/3L05JO3KMd.json"
                                     background="transparent"
                                     speed="1"
-                                    style="width: 360px; height: 300px;"
+                                    style={{ width: 360, height: 300 }}
                                     loop
                                     autoplay
                                 ></lottie-player>
@@ -615,10 +462,13 @@ export default Home;
                         <div className="rounded-3xl px-3 bg-white flex items-center justify-center flex-col overflow-hidden">
                             <div className="h-auto flex items-center justify-center ">
                                 <lottie-player
-                                    src="./public/assets/lottie/stable.json"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/lottie/stable.json'
+                                    }
                                     background="transparent"
                                     speed="1"
-                                    style="width: 240px; height: 300px;"
+                                    style={{ width: 240, height: 300 }}
                                     loop
                                     autoplay
                                 ></lottie-player>
@@ -637,10 +487,13 @@ export default Home;
                         <div className="rounded-3xl px-3 bg-white flex items-center justify-center flex-col overflow-hidden">
                             <div className="h-auto flex items-center justify-center mt-6 mb-10">
                                 <lottie-player
-                                    src="./public/assets/lottie/support.json"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/lottie/support.json'
+                                    }
                                     background="transparent"
                                     speed="1"
-                                    style="width: 240px; height: 240px;"
+                                    style={{ width: 240, height: 240 }}
                                     loop
                                     autoplay
                                 ></lottie-player>
@@ -659,13 +512,17 @@ export default Home;
                         </div>
                     </div>
                 </div>
+
                 <footer className="flex items-center justify-center flex-col mt-20">
                     <div className="grid gap-8 px-8 md:grid-cols-2 lg:grid-cols-7 max-w-[1280px] mx-auto">
                         <div className="md:row-span-2 lg:row-span-1 lg:col-span-3 lg:pr-20">
                             <div className="md:mb-8 lg:mb-0">
                                 <img
                                     className="scale-110 mt-[-40px]"
-                                    src="./public/assets/LOGO-dark.png"
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        '/assets/LOGO-dark.png'
+                                    }
                                     alt=""
                                 />
                             </div>
@@ -741,18 +598,8 @@ export default Home;
                     </span>
                 </footer>
             </div>
-
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <script src="https://unpkg.com/scrollreveal"></script>
-            <script src="https://unpkg.com/anima-counters@1.1.1/dist/index.js"></script>
-            <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-                integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-                crossOrigin="anonymous"
-                referrerpolicy="no-referrer"
-            ></script>
         </div>
- * 
- * 
- * */
+    );
+}
+
+export default Home;

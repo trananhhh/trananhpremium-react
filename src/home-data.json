@@ -1,0 +1,65 @@
+[
+    {
+        "productName": "Netflix",
+        "route": "/netflix",
+        "image": "netflix.png",
+        "price": 40,
+        "oldPrice": 260
+    },
+
+    {
+        "productName": "Spotify",
+        "route": "/spotify",
+        "image": "spotify.png",
+        "price": 19,
+        "oldPrice": 59
+    },
+
+    {
+        "productName": "Youtube Premium",
+        "route": "/youtube",
+        "image": "youtube.png",
+        "price": 32,
+        "oldPrice": 276
+    },
+
+    {
+        "productName": "Grammarly",
+        "insta": "trananhpremium",
+        "image": "grammarly.png",
+        "price": 20,
+        "oldPrice": 276
+    },
+
+    {
+        "productName": "Disney+",
+        "insta": "trananhpremium",
+        "image": "disney.png",
+        "price": 35,
+        "oldPrice": 185
+    },
+
+    {
+        "productName": "Canva",
+        "insta": "trananhpremium",
+        "image": "canva.png",
+        "price": 6,
+        "oldPrice": 110
+    },
+
+    {
+        "productName": "Office 365",
+        "insta": "trananhpremium",
+        "image": "office.png",
+        "price": 20,
+        "oldPrice": 110
+    },
+
+    {
+        "productName": "Nord VPN",
+        "insta": "trananhpremium",
+        "image": "nordvpn.png",
+        "price": 30,
+        "oldPrice": 276
+    }
+]
