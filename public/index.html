@@ -10,7 +10,6 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./public/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
@@ -23,92 +22,27 @@
 
   </script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://unpkg.com/anima-counters@1.1.1/dist/index.js"></script>
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossOrigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 </body>
 
 
 <script>
-  // new TypeIt("#aboutUs", {
-  //     strings: ["       speed: 0, delay: 100, waitUntilVisible: false
-  //     // speed: 1, delay: 100, waitUntilVisible: true
-  // }).go();
-  ScrollReveal({
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    viewport: document.getElementById('fullpage')
-  });
+  // ScrollReveal({
+  //   distance: '60px',
+  //   duration: 2500,
+  //   delay: 400,
+  //   viewport: document.getElementById('fullpage')
+  // });
 
-  ScrollReveal().reveal('#logo-section-1', { delay: 200, origin: 'top', duration: 500 });
-  ScrollReveal().reveal('.title', { delay: 300, origin: 'bottom' });
-  ScrollReveal().reveal('.box', { delay: 400, origin: 'bottom' });
-  ScrollReveal().reveal('.action-btns', { delay: 1200, origin: 'bottom' });
-  ScrollReveal().reveal('.section-2 .img-container', { origin: 'bottom', duration: 800 });
-  ScrollReveal().reveal('.section-2 .text-container', { origin: 'right', duration: 1000 });
-  ScrollReveal().reveal('.section-2 .bottom-container p', { origin: 'bottom', duration: 1000, interval: 300 });
-  ScrollReveal().reveal('#section3 .section-title', { origin: 'top', duration: 500 });
-  ScrollReveal().reveal('.product-item', { origin: 'bottom', duration: 1000, interval: 300, delay: 500 });
-
-  initAnimaCounter();
-
-  function scrollToTarget(target) {
-    document.querySelector(target).scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
-
-  $('a[href*="#"]')
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function (event) {
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-        &&
-        location.hostname == this.hostname
-      ) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function () {
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
-    });
-
-  const goToTopBtn = document.getElementById('go-to-top');
-  const navbar = document.getElementById('navbar');
-  const scrollDownHint = document.getElementById('scroll-down-hint');
-
-  // window.onscroll = function () { scrollFunction() };
-
-  // function scrollFunction() {
-  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //     goToTopBtn.style.opacity = 1;
-  //     navbar.style.opacity = 1;
-  //     scrollDownHint.style.opacity = 0;
-  //   } else {
-  //     goToTopBtn.style.opacity = 0;
-  //     navbar.style.opacity = 0;
-  //     scrollDownHint.style.opacity = 1;
-  //   }
-  // }
+  // ScrollReveal().reveal('#logo-section-1', { delay: 200, origin: 'top', duration: 500 });
+  // ScrollReveal().reveal('.title', { delay: 300, origin: 'bottom' });
+  // ScrollReveal().reveal('.box', { delay: 400, origin: 'bottom' });
+  // ScrollReveal().reveal('.action-btns', { delay: 1200, origin: 'bottom' });
+  // ScrollReveal().reveal('.section-2 .img-container', { origin: 'bottom', duration: 800 });
+  // ScrollReveal().reveal('.section-2 .text-container', { origin: 'right', duration: 1000 });
+  // ScrollReveal().reveal('.section-2 .bottom-container p', { origin: 'bottom', duration: 1000, interval: 300 });
+  // ScrollReveal().reveal('#section3 .section-title', { origin: 'top', duration: 500 });
+  // ScrollReveal().reveal('.product-item', { origin: 'bottom', duration: 1000, interval: 300, delay: 500 });
 </script>
 
 </html>

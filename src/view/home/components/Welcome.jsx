@@ -1,0 +1,62 @@
+import React from 'react';
+
+const Welcome = () => {
+    return (
+        <div
+            className={
+                'section bg-[url(' +
+                process.env.PUBLIC_URL +
+                "'/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex-col pt-56 flex lg:pt-0 lg:justify-center"
+            }
+            id="welcome"
+        >
+            <div className="flex flex-col justify-center ml-6 md:ml-10 lg:flex-row lg:mt-[-6rem]">
+                <div
+                    id="logo-section-1"
+                    className="img-container .reveal ml-[-2rem] md:ml-[-3.5rem]"
+                >
+                    <img
+                        className="max-h-36 md:max-h-64"
+                        src={
+                            process.env.PUBLIC_URL + '/assets/logo-no-text.png'
+                        }
+                        alt="logo-no-text"
+                        srcSet=""
+                        draggable="false"
+                    />
+                </div>
+                <div className="flex flex-col justify-center">
+                    <div className="main-text font-[billCorp] text-[12vw] mb-5 flex overflow-hidden h-20 md:h-36 lg:text-8xl">
+                        <h1 className="title .reveal">trananh</h1>
+                        <div className="box .reveal">
+                            <ul
+                                id="scroll-text-container"
+                                className="list-product opacity-50 "
+                            >
+                                <li className="title-ext">netflix</li>
+                                <li className="title-ext">spotify</li>
+                                <li className="title-ext">youtube</li>
+                                <li className="title-ext">grammarly</li>
+                                <li className="title-ext">spotify</li>
+                                <li className="title-ext">netflix</li>
+                                <li className="title-ext">premium</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="action-btns .reveal lg:mt-[-3rem]">
+                        <a
+                            className="bg-red-700 text-white p-4 rounded-full font-bold md:text-2xl md:px-8 md:py-6 lg:text-lg lg:px-5 lg:py-4 hover:drop-shadow-[0px_4px_16px_rgba(0,0,0,0.3)] transition-all ease-in-out"
+                            id="direct-btn"
+                            href="https://www.instagram.com/trananh.spotify/"
+                        >
+                            <i className="fa-solid fa-message mr-2"></i>
+                            Liên hệ ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Welcome;

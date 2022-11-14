@@ -19,9 +19,9 @@ export default function MemberItem({ name, username, imageSrc, disable }) {
                     alt={username}
                 />
                 <div className="flex flex-col xl:items-start pt-4 lg:pt-0 flex-1 min-h-max">
-                    {/* <p className="member-item__title lg:text-lg font-bold text-center text-white text-xs md:text-base font-[Roboto]">
+                    <p className="member-item__title lg:text-lg font-bold text-center text-white text-xs md:text-base font-[Roboto] hidden lg:block">
                         {name}
-                    </p> */}
+                    </p>
                     <p className="member-item__username lg:text-lg text-center break-all text-white text-xs md:text-base font-[Roboto] ">
                         @{username}
                     </p>

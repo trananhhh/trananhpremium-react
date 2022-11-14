@@ -13,7 +13,7 @@ export default function HomeProductItem({
 
     return (
         <div
-            className="product-item cursor-pointer text-gray-200"
+            className="product-item cursor-pointer text-gray-200 drop-shadow-[0_0_2px_rgba(0,0,0,0.8)]"
             onClick={() => {
                 if (route != null && route !== undefined) navigate(route);
                 else
