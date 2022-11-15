@@ -1,25 +1,26 @@
-import { Box, Image } from '@chakra-ui/react';
+import { Box, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import './index.scss';
 
 const ProductIntro = ({ title, subtitle, description, imageSrc }) => {
     return (
         <Box className="product-intro">
-            <Box className="header">
+            <Box className="header relative">
                 <Box className="header__text">
                     <h2 className="title">{title}</h2>
                     <span className="sub-title">{subtitle}</span>
                 </Box>
-                <Box className="header__logo">
+                <Box className="header__logo max-h-fit md:absolute md:right-1 md:top-2">
                     <Image
+                        className="max-h-12 max-w-12 md:max-h-28"
                         src={process.env.PUBLIC_URL + imageSrc}
                         alt=""
                         objectFit="cover"
                     />
                 </Box>
             </Box>
-            <Box className="description">
-                <p>{description}</p>
+            <Box className="description md:max-w-[75%]">
+                <Text>{description}</Text>
             </Box>
         </Box>
     );

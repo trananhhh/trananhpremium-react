@@ -1,6 +1,7 @@
 import React from 'react';
-import HomeProductItem from '../../../components/HomeProductItem/HomeProductItem';
-import data from '../../../home-data.json';
+import { Element } from 'react-scroll';
+import HomeProductItem from '../../components/HomeProductItem/HomeProductItem';
+import data from '../../home-data.json';
 
 const Products = () => {
     return (
@@ -12,7 +13,10 @@ const Products = () => {
                 "'/assets/backgrounds/section-3.png')] bg-no-repeat bg-cover bg-top min-h-[140vh] md:min-h-[120vh] px-8 flex justify-center items-center lg:min-h-[145vh]"
             }
         >
-            <div className="flex-col flex justify-center items-center pt-8 max-w-[1200px] mx-auto lg:pt-0 w-full">
+            <Element
+                name="Products"
+                className="flex-col flex justify-center items-center pt-8 max-w-[1200px] mx-auto lg:pt-0 w-full"
+            >
                 <div className="top-container flex items-center justify-center w-full">
                     <div className="text-container .reveal w-full drop-shadow-[0_0_2px_rgba(0,0,0,0.8)]">
                         <h1
@@ -43,7 +47,7 @@ const Products = () => {
                         />
                     ))}
                 </div>
-            </div>
+            </Element>
         </div>
     );
 };

@@ -4,6 +4,7 @@ import {
     AccordionItem,
     AccordionPanel,
     Box,
+    Text,
 } from '@chakra-ui/react';
 import React from 'react';
 
@@ -17,11 +18,11 @@ const ProductPlan = ({
     primaryColor,
 }) => {
     return (
-        <div>
+        <div className="md:mx-4">
             <Accordion allowMultiple className="product-plans">
                 <AccordionItem>
                     <AccordionButton
-                        className="product-plan"
+                        className="product-plan md:min-w-[360px]"
                         style={{ '--props-color': 'var(' + primaryColor + ')' }}
                     >
                         <Box className="container">
@@ -39,6 +40,9 @@ const ProductPlan = ({
                                     </h4>
                                 ))}
                             </Box>
+                            <Text className="text-center italic mt-4 opacity-80">
+                                Bấm vào để xem chi tiết
+                            </Text>
                         </Box>
                     </AccordionButton>
                     <AccordionPanel pb={4}>

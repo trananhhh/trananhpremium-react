@@ -1,7 +1,7 @@
 import React from 'react';
-import LottieItem from '../../../components/LottieItem/LottieItem';
+import LottieItem from '../../components/LottieItem/LottieItem';
 
-import data from '../../../home-data.json';
+import data from '../../home-data.json';
 
 const Commitments = () => {
     return (

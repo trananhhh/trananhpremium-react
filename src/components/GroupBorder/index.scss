@@ -1,7 +1,7 @@
 .group-border {
     border: 1px dashed #ccc;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     margin: 12px;
     margin-top: 42px;
     padding: 8px 24px 24px;
@@ -14,11 +14,12 @@
         content: 'Bảng giá';
         position: absolute;
         top: -12px;
-        background-color: var(--chakra-colors-chakra-body-bg);
-        padding: 0 18px;
+        background-color: #ffffff;
+        padding: 2px 18px;
         font-weight: 600;
         left: 50%;
         color: #333;
         transform: translateX(-50%);
+        border-radius: 12px;
     }
 }

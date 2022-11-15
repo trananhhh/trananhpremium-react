@@ -1,6 +1,6 @@
 import React from 'react';
-import MemberItem from '../../../components/MemberItem/MemberItem';
-import data from '../../../home-data.json';
+import MemberItem from '../MemberItem/MemberItem';
+import data from '../../home-data.json';
 
 const Members = () => {
     return (

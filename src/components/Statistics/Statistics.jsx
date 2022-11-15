@@ -1,6 +1,6 @@
 import React from 'react';
-import CountUpStatistic from '../../../components/CountUpStatistic/CountUpStatistic';
-import data from '../../../home-data.json';
+import data from '../../home-data.json';
+import CountUpStatistic from '../CountUpStatistic/CountUpStatistic';
 
 const Statistics = () => {
     return (

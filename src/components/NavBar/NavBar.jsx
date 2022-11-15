@@ -1,40 +1,65 @@
-const data = [
-    { title: 'Giới thiệu', icon: 'fa-house', section: 'welcome' },
-    { title: 'Sản phẩm', icon: 'fa-cart-shopping', section: 'products' },
-    { title: 'Thành viên', icon: ' fa-user', section: 'section4' },
-    { title: 'Cam kết', icon: 'fa-shield', section: 'section6' },
-];
+import { Box, Image } from '@chakra-ui/react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import { RouteConfig } from '../../router';
 
-function NavBar() {
+const NavBar = () => {
+    const navigate = useNavigate();
+
     return (
         <div
             id="navbar"
-            className="fixed h-32 md:top-0 bottom-0 inset-x-4 mx-auto items-center justify-center z-10 transition-all flex"
+            className="fixed h-24 md:top-0 bottom-0 inset-x-4 mx-auto items-center justify-center z-10 transition-all flex drop-shadow-[0_0_12px_rgba(0,0,0,0.3)]"
         >
-            <div className="center rounded-full bg-white p-3 shadow-lg flex">
-                {data.map((item) => (
-                    <a
-                        className="font-sans flex text-gray-600 font-semibold  text-md hover:bg-[#e5e7eb] hover:[#64748b] px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition"
-                        href={`#${item.section}`}
-                    >
-                        <i
-                            className={
-                                'fa-solid text-2xl md:text-base ' + item.icon
-                            }
-                        ></i>
-                        <span className="hidden md:inline-block ml-2">
-                            {item.title}
-                        </span>
-                    </a>
-                ))}
-                <span className=" font-sans flex bg-red-600 text-white font-semibold px-[16px] py-[12px] md:py-2 rounded-full transition shadow-lg ml-2">
-                    <i className="fa-solid text-2xl md:text-base fa-phone"></i>
+            <div className="center rounded-full bg-white p-2 shadow-lg flex">
+                <div className="cursor-default mx-auto h-10 self-center pr-1 hidden md:flex">
+                    <Image
+                        className="my-[1px]"
+                        src={
+                            process.env.PUBLIC_URL + '/assets/logo-no-text.png'
+                        }
+                    />
+                    <Image
+                        className="mt-1"
+                        src={
+                            process.env.PUBLIC_URL +
+                            '/assets/trananhpremium.png'
+                        }
+                    />
+                </div>
+                <div
+                    onClick={() => {
+                        navigate(RouteConfig.home);
+                    }}
+                    className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb] px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
+                >
+                    <i className="fa-solid text-2xl md:text-base fa-home"></i>
+                    <span className="hidden md:inline-block ml-2">
+                        Trang chủ
+                    </span>
+                </div>
+                <Link
+                    to="Products"
+                    smooth={true}
+                    className="font-sans flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb] px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
+                >
+                    <i
+                        className={
+                            'fa-solid text-2xl md:text-base fa-cart-shopping'
+                        }
+                    ></i>
+                    <span className="hidden md:inline-block ml-2">
+                        Sản phẩm
+                    </span>
+                </Link>
+                <Box className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb]  px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer">
+                    <i className="fa-solid text-2xl md:text-base fa-message"></i>
                     <span className="hidden md:inline-block ml-2">Liên hệ</span>
-                </span>
+                </Box>
             </div>
         </div>
-        // https://relatablecode.com/how-to-make-a-navbar-with-react-scroll
     );
-}
+};
 
 export default NavBar;

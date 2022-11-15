@@ -6,7 +6,6 @@
         padding: 0;
     }
     .chakra-accordion__panel {
-        // margin-top: -12px;
         padding: 12px 24px 24px;
     }
 }
@@ -14,13 +13,11 @@
 .product-plan {
     background-color: white;
     margin: auto;
-    padding: 24px;
     border-radius: 24px;
     text-align: left;
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow);
-    width: 85%;
     max-width: 360px;
     margin-top: 24px;
     .header {

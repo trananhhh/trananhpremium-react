@@ -4,8 +4,8 @@ import Cover from '../../components/Cover/Cover';
 import GroupBorder from '../../components/GroupBorder/GroupBorder';
 import ProductIntro from '../../components/ProductIntro/ProductIntro';
 import ProductPlan from '../../components/ProductPlan/ProductPlan';
-import './index.scss';
 import data from '../../data.json';
+import './index.scss';
 
 const Spotify = () => {
     const spotifyData = data.spotify;

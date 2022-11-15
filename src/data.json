@@ -33,8 +33,8 @@
                 ],
                 "pricing": [
                     { "duration": 6, "price": 179 },
-                    { "duration": 12, "price": 319 },
-                    { "duration": 24, "price": 569 }
+                    { "duration": 12, "price": 319, "oldPrice": 358 },
+                    { "duration": 24, "price": 569, "oldPrice": 716 }
                 ]
             }
         ]
@@ -86,7 +86,6 @@
                 "minPrice": 40,
                 "description": [
                     "👏🏻 Gói Premium xem phim chất lượng 4K",
-                    "👏🏻 Truy cập toàn bộ phim",
                     "👏🏻 Đăng nhập trên 1 thiết bị",
                     "🚫 Sử dụng Profile chung với người khác",
                     "🚫 Có thể phải đổi account trong tháng",

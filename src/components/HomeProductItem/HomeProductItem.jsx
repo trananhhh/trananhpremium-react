@@ -1,3 +1,10 @@
+import {
+    Stat,
+    StatArrow,
+    StatHelpText,
+    StatLabel,
+    StatNumber,
+} from '@chakra-ui/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,24 +29,21 @@ export default function HomeProductItem({
                         .focus();
             }}
         >
-            <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden">
+            <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden mb-2">
                 <img
                     src={process.env.PUBLIC_URL + '/assets/logos/' + image}
                     alt={image}
                 />
             </div>
-            <h3 className="font-bold mt-2 mb text-lg mb-1 md:text-2xl md:my-4 lg:my-2">
-                {productName}
-            </h3>
-            <div className="font-bold text-sm md:text-2xl lg:text-xl">
-                <span className="product-item__price-main">{price}.000đ</span>
-                <span className="bg-orange-400 py-1 px-2 rounded md:text-lg md:rounded-xl lg:rounded-lg text-right ml-2">
-                    <i className="fa-solid fa-minus"></i>
+            <Stat>
+                <StatLabel>{productName}</StatLabel>
+                <StatNumber className="mt-[-4px]">{price}.000đ</StatNumber>
+                <StatHelpText>
+                    <del className="opacity-50">{oldPrice}.000đ</del>
+                    <StatArrow type="decrease" color="green.300" />
                     {Math.round(((oldPrice - price) / oldPrice) * 100)}%
-                </span>
-                <br />
-                <del className="opacity-50">{oldPrice}.000đ</del>
-            </div>
+                </StatHelpText>
+            </Stat>
         </div>
     );
 }
