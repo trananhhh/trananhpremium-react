@@ -15,12 +15,14 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 :root {
     --text-dark-color: #2f2f2f;
     --box-shadow: 0 0 24px #2f2f2f42;
     --green-spotify: #2ce271;
+    --green-grammarly: #0dc49b;
     --red-netflix: #e50a15;
     --blue-google: #4285f4;
 }

@@ -34,7 +34,7 @@
 
         {
             "productName": "Grammarly",
-            "insta": "trananhpremium",
+            "route": "/grammarly",
             "image": "grammarly.png",
             "price": 20,
             "oldPrice": 276

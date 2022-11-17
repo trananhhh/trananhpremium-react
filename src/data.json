@@ -197,19 +197,55 @@
                     { "duration": 6, "price": 450 },
                     { "duration": 12, "price": 750, "oldPrice": 900 }
                 ]
-            },
+            }
+        ]
+    },
+    "grammarly": {
+        "code": "grammarly",
+        "title": "Grammarly",
+        "subtitle": "Chỉnh sửa ngữ pháp, chính tả, dấu câu...",
+        "description": "Grammarly là công cụ kiểm tra chính tả, ngữ pháp tiếng Anh theo thời gian thực. Tức là bạn nhập văn bản đến đâu Grammarly sẽ kiểm tra ngay đến đó.",
+        "logo": "grammarly.png",
+        "cover": "grammarly.png",
+        "primaryColor": "--green-grammarly",
+        "data": [
             {
-                "name": "Gói 5TB",
-                "minPrice": 375,
+                "name": "Gói Shared",
+                "minPrice": 20,
                 "description": [
-                    "👏🏻 5 TB bộ nhớ",
-                    "👏🏻 Tiếp cận các chuyên gia của Google",
-                    "👏🏻 Chia sẻ với tối đa 5 người",
-                    "👏🏻 Lợi ích bổ sung cho thành viên"
+                    "👏🏻 Sửa lỗi về giới từ, dấu câu.",
+                    "👏🏻 Sửa lỗi câu bị động.",
+                    "👏🏻 Sửa lỗi câu quá dài.",
+                    "👏🏻 Gợi ý thay đổi từ lặp lại nhiều lần.",
+                    "👏🏻 Các lỗi chính tả về từ vựng.",
+                    "👏🏻 Kiểm tra đạo văn",
+                    "🚫 Sử dụng 1 thiết bị",
+                    "🚫 Dữ liệu công khai"
                 ],
                 "pricing": [
-                    { "duration": 6, "price": 2250 },
-                    { "duration": 12, "price": 3750, "oldPrice": 4500 }
+                    { "duration": 1, "price": 30 },
+                    { "duration": 3, "price": 80, "oldPrice": 90 },
+                    { "duration": 6, "price": 140, "oldPrice": 180 },
+                    { "duration": 12, "price": 200, "oldPrice": 360 }
+                ]
+            },
+            {
+                "name": "Gói Private",
+                "minPrice": 33,
+                "description": [
+                    "👏🏻 Sửa lỗi về giới từ, dấu câu.",
+                    "👏🏻 Sửa lỗi câu bị động.",
+                    "👏🏻 Sửa lỗi câu quá dài.",
+                    "👏🏻 Gợi ý thay đổi từ lặp lại nhiều lần.",
+                    "👏🏻 Các lỗi chính tả về từ vựng.",
+                    "👏🏻 Kiểm tra đạo văn",
+                    "👏🏻 Sử dụng 4-5 thiết bị",
+                    "👏🏻 Bảo mật dữ liệu"
+                ],
+                "pricing": [
+                    { "duration": 3, "price": 199 },
+                    { "duration": 6, "price": 299, "oldPrice": 398 },
+                    { "duration": 12, "price": 399, "oldPrice": 796 }
                 ]
             }
         ]

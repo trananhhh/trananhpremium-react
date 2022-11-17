@@ -10,7 +10,7 @@ const ProductIntro = ({ title, subtitle, description, imageSrc }) => {
                     <h2 className="title">{title}</h2>
                     <span className="sub-title">{subtitle}</span>
                 </Box>
-                <Box className="header__logo max-h-fit md:absolute md:right-1 md:top-2">
+                <Box className="header__logo max-h-fit md:absolute md:right-1 md:top-2 w-12">
                     <Image
                         className="max-h-12 max-w-12 md:max-h-28"
                         src={process.env.PUBLIC_URL + imageSrc}
