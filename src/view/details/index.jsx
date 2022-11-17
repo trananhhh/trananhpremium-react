@@ -9,7 +9,7 @@ const DetailsPage = ({ productData }) => {
     return (
         <Box
             position="relative"
-            paddingTop="100px"
+            paddingTop="15vh"
             margin="auto"
             display="flex"
             flexDirection="column"

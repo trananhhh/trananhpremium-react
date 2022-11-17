@@ -29,7 +29,7 @@ export default function HomeProductItem({
                         .focus();
             }}
         >
-            <div className="rounded-xl hover:drop-shadow-xl hover:shadow-2xl hover:opacity-80 transition overflow-hidden mb-2">
+            <div className="rounded-xl md:hover:drop-shadow-xl md:hover:shadow-2xl md:hover:opacity-80 transition overflow-hidden mb-2">
                 <img
                     src={process.env.PUBLIC_URL + '/assets/logos/' + image}
                     alt={image}

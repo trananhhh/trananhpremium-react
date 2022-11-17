@@ -11,7 +11,7 @@ const Commitments = () => {
                     Cam kết từ chúng tôi
                 </h1>
             </div>
-            <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+            <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
                 {data.commitments.map((commitment) => (
                     <LottieItem
                         key={commitment.mediaSrc}

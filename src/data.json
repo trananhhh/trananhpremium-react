@@ -10,7 +10,7 @@
         "data": [
             {
                 "name": "Gói Tiết kiệm",
-                "minPrice": "từ 19",
+                "minPrice": "25",
                 "description": [
                     "👏🏻 Nâng cấp tài khoản chính chủ",
                     "👏🏻 Bảo hành đủ thời gian sử dụng",
@@ -25,11 +25,11 @@
             },
             {
                 "name": "Gói Ổn định",
-                "minPrice": "từ 24",
+                "minPrice": "30",
                 "description": [
                     "👏🏻 Nâng cấp tài khoản chính chủ",
                     "👏🏻 Bảo hành đủ thời gian sử dụng",
-                    "👏🏻 KHÔNG lỗi trong quá trình sử dụng",
+                    "👏🏻 KHÔNG lỗi khi sử dụng",
                     "👏🏻 Nói không với Token"
                 ],
                 "pricing": [
@@ -98,6 +98,52 @@
                     { "duration": 2, "price": 75, "oldPrice": 80 },
                     { "duration": 3, "price": 140, "oldPrice": 160 }
                 ]
+            }
+        ]
+    },
+    "youtube": {
+        "code": "youtube",
+        "title": "Youtube Premium",
+        "subtitle": "Chặn quảng cáo và Nghe nhạc trong nền",
+        "description": "Với YouTube Premium, bạn có thể xem hàng triệu video không có quảng cáo trên cả TV, máy chơi game,...",
+        "logo": "youtube.png",
+        "cover": "youtube.jpg",
+        "primaryColor": "--red-netflix",
+        "data": [
+            {
+                "name": "Gói Trial",
+                "minPrice": 15,
+                "description": [
+                    "👏🏻 Xóa các quảng cáo khỏi video",
+                    "👏🏻 Xem video và nghe nhạc ngoại tuyến",
+                    "👏🏻 Phát nhạc ngay cả khi khóa màn hình",
+                    "Điều kiện:",
+                    "- Chưa từng sử dụng trước đây",
+                    "- Cung cấp mật khẩu Google"
+                ],
+                "pricing": [{ "duration": 4, "price": 60 }]
+            },
+            {
+                "name": "Gói 6 tháng",
+                "minPrice": 43,
+                "description": [
+                    "👏🏻 Xóa các quảng cáo khỏi video",
+                    "👏🏻 Xem video và nghe nhạc ngoại tuyến",
+                    "👏🏻 Phát nhạc ngay cả khi khóa màn hình",
+                    "👏🏻 Dùng chung Play Music và YouTube Music Premium"
+                ],
+                "pricing": [{ "duration": 6, "price": 260 }]
+            },
+            {
+                "name": "Gói 1 năm",
+                "minPrice": 40,
+                "description": [
+                    "👏🏻 Xóa các quảng cáo khỏi video",
+                    "👏🏻 Xem video và nghe nhạc ngoại tuyến",
+                    "👏🏻 Phát nhạc ngay cả khi khóa màn hình",
+                    "👏🏻 Dùng chung Play Music và YouTube Music Premium"
+                ],
+                "pricing": [{ "duration": 12, "price": 480 }]
             }
         ]
     },

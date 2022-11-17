@@ -9,7 +9,7 @@ const AboutUs = () => {
             <div className="grid lg:grid-cols-7 grid-flow-row-dense lg:gap-x-8">
                 <h1 className="text-center font-bold mb-4 text-3xl lg:text-4xl md:text-5xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-3">
                     Về
-                    <span className="font-[billCorp] rounded-xl opacity-90 tracking-tight md:tracking-normal ml-2">
+                    <span className="font-[billCorp] rounded-xl opacity-90 mx-2">
                         trananh
                         <span className=" opacity-80 ml-0 pl-0">premium</span>
                     </span>
@@ -23,7 +23,7 @@ const AboutUs = () => {
                     />
                 </div>
                 <div className="transition-all bg-gray-200 p-4 rounded-xl max-h-fit ease-linear lg:order-3 float-top lg:col-span-3 shadow-inner">
-                    <i id="aboutUs" className="md:text-xl">
+                    <p id="aboutUs" className="md:text-xl">
                         Sử dụng các phần mềm, ứng dụng bản Crack gián tiếp gây
                         ra rất nhiều vụ lộ dữ liệu nguy hiểm trong thời gian gần
                         đây. Mặt khác, trải nghiệm người dùng của bản crack cũng
@@ -31,16 +31,16 @@ const AboutUs = () => {
                         <br />
                         <br />
                         Do đó,
-                    </i>
-                    <span className="font-[billCorp] text-xl rounded-xl opacity-90 mr-1">
-                        trananh
-                        <span className="opacity-80 ml-0 pl-0">premium</span>
-                    </span>
-                    <i id="aboutUs" className="md:text-xl">
+                        <span className="font-[billCorp] md:text-xl rounded-xl opacity-90 mx-1">
+                            trananh
+                            <span className="opacity-80 ml-0 pl-0">
+                                premium
+                            </span>
+                        </span>
                         ra đời với mong muốn giúp người Việt tiếp cận với các
                         phần mềm, ứng dụng bản quyền với giá rẻ hơn 20 - 90 %
                         giá gốc.
-                    </i>
+                    </p>
                 </div>
             </div>
             <div className="flex justify-center mt-8 flex-col items-center lg:flex-row lg:mt-12">
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
                     <i className="text-red-600 mr-2 fa-solid fa-circle-check"></i>
                     Được bảo hành bởi
-                    <span className="font-[billCorp] pt-2 py-1 rounded-xl opacity-90 ml-1">
+                    <span className="font-[billCorp] pt-2 py-1 rounded-xl opacity-90 mx-1">
                         trananh
                         <span className="opacity-80 ml-0 pl-0">premium</span>
                     </span>

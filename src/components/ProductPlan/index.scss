@@ -27,11 +27,12 @@
         justify-content: space-between;
 
         .name {
-            font-weight: 600;
-            font-size: 22px;
+            font-weight: 400;
+            font-size: 20px;
         }
 
         .price {
+            margin-left: 12px;
             background-color: var(--props-color);
             color: white;
             font-weight: 800;

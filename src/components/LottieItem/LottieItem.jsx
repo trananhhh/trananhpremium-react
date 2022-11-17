@@ -17,12 +17,12 @@ const LottieItem = ({ titleF, titleS, subtitle, mediaSrc, width, height }) => {
                 ></lottie-player>
             </div>
             <div className="text-container py-8 px-3 pt-0 text-center">
-                <h3 className="guarantee-item__title font-bold text-3xl">
+                <h3 className="guarantee-item__title font-bold text-3xl lg:text-2xl">
                     {titleF}
                     <br />
                     {titleS}
                 </h3>
-                <p className="guarantee-item__description mt-4 tracking-tight text-center leading-8 text-xl">
+                <p className="guarantee-item__description mt-4 tracking-tight text-center leading-8 text-xl lg:text-lg">
                     {subtitle}
                 </p>
             </div>

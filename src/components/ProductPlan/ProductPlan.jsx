@@ -30,8 +30,11 @@ const ProductPlan = ({
                     >
                         <Box className="container bg-white">
                             <Box className="header">
-                                <h2 className="name">{name}</h2>
-                                <span className="price">{minPrice}.000đ</span>
+                                <span className="name">{name}</span>
+                                <span className="price">
+                                    {minPrice}.000đ /{' '}
+                                    <span className="font-normal">tháng</span>
+                                </span>
                             </Box>
                             <Box className="description">
                                 {description.map((item, index) => (

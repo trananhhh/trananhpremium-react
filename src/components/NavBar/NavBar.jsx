@@ -14,7 +14,7 @@ const NavBar = () => {
             id="navbar"
             className="fixed h-24 md:top-0 bottom-0 inset-x-4 mx-auto items-center justify-center z-10 transition-all flex drop-shadow-[0_0_12px_rgba(0,0,0,0.3)]"
         >
-            <div className="center rounded-full bg-white p-2 shadow-lg flex">
+            <div className="center rounded-full bg-white p-2 shadow-lg flex bg-opacity-90">
                 <div className="cursor-default mx-auto h-10 self-center pr-1 hidden md:flex">
                     <Image
                         className="my-[1px]"
@@ -34,7 +34,7 @@ const NavBar = () => {
                     onClick={() => {
                         navigate('/');
                     }}
-                    className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb] px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
+                    className="flex text-gray-600 font-semibold text-md hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
                 >
                     <i className="fa-solid text-2xl md:text-base fa-home"></i>
                     <span className="hidden md:inline-block ml-2">
@@ -44,7 +44,7 @@ const NavBar = () => {
                 <Link
                     to="Products"
                     smooth={true}
-                    className="font-sans flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb] px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
+                    className="font-sans flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
                     <i
                         className={
@@ -57,7 +57,7 @@ const NavBar = () => {
                 </Link>
                 <Box
                     onClick={() => dispatch(openModal())}
-                    className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb]  px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
+                    className="flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
                     <i className="fa-solid text-2xl md:text-base fa-message"></i>
                     <span className="hidden md:inline-block ml-2">Liên hệ</span>
