@@ -1,7 +1,7 @@
-import React from 'react';
 import { Box, Image } from '@chakra-ui/react';
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
 import { openModal } from '../../redux/modalSlice';
 
