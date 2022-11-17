@@ -4,11 +4,8 @@ import Cover from '../../components/Cover/Cover';
 import GroupBorder from '../../components/GroupBorder/GroupBorder';
 import ProductIntro from '../../components/ProductIntro/ProductIntro';
 import ProductPlan from '../../components/ProductPlan/ProductPlan';
-import data from '../../data.json';
-import './index.scss';
 
-const Spotify = () => {
-    const spotifyData = data.spotify;
+const DetailsPage = ({ productData }) => {
     return (
         <Box
             position="relative"
@@ -18,24 +15,24 @@ const Spotify = () => {
             flexDirection="column"
             alignItems="center"
         >
-            <Cover imageSrc={spotifyData.cover} />
+            <Cover imageSrc={productData.cover} />
             <ProductIntro
-                title={spotifyData.title}
-                subtitle={spotifyData.subtitle}
-                description={spotifyData.description}
+                title={productData.title}
+                subtitle={productData.subtitle}
+                description={productData.description}
                 imageSrc={
-                    process.env.PUBLIC_URL + 'assets/logo/' + spotifyData.logo
+                    process.env.PUBLIC_URL + 'assets/logo/' + productData.logo
                 }
             />
             <GroupBorder>
-                {spotifyData.data.map((plan) => (
+                {productData.data.map((plan) => (
                     <ProductPlan
                         key={plan.name}
                         name={plan.name}
                         minPrice={plan.minPrice}
                         description={plan.description}
                         pricing={plan.pricing}
-                        primaryColor={spotifyData.primaryColor}
+                        primaryColor={productData.primaryColor}
                     />
                 ))}
             </GroupBorder>
@@ -43,4 +40,4 @@ const Spotify = () => {
     );
 };
 
-export default Spotify;
+export default DetailsPage;

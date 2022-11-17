@@ -21,7 +21,8 @@
     --box-shadow: 0 0 24px #2f2f2f42;
     --green-spotify: #2ce271;
     --red-netflix: #e50a15;
-}   
+    --blue-google: #4285f4;
+}
 
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */

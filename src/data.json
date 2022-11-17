@@ -1,5 +1,6 @@
 {
     "spotify": {
+        "code": "spotify",
         "title": "Spotify Premium",
         "subtitle": "Nâng cấp trước, thanh toán sau.",
         "description": "Spotify là một dịch vụ cung cấp nhạc, podcast và video kỹ thuật số cho phép bạn truy cập hàng triệu bài hát và các nội dung khác của các nghệ sĩ trên khắp thế giới.",
@@ -40,6 +41,7 @@
         ]
     },
     "netflix": {
+        "code": "netflix",
         "title": "Netflix",
         "subtitle": "Xem phim không giới hạn",
         "description": "Netflix là một dịch vụ xem video trực tuyến đến từ Mỹ, với kho video Netflix sở hữu cực “khủng”, chưa kể mọi video đều sở có bản quyền đầy đủ cùng chất lượng 4K.",
@@ -95,6 +97,73 @@
                     { "duration": 1, "price": 40 },
                     { "duration": 2, "price": 75, "oldPrice": 80 },
                     { "duration": 3, "price": 140, "oldPrice": 160 }
+                ]
+            }
+        ]
+    },
+    "googleone": {
+        "code": "google-one",
+        "title": "Google One",
+        "subtitle": "Giải phóng bộ nhớ của bạn",
+        "description": "Google One cho phép bạn thiết lập sao lưu những dữ liệu quan trọng cần thiết từ trên điện thoại như hình ảnh, tin nhắn, danh bạ và những nội dung khác lên trên bộ lưu trữ đám mây của Google.",
+        "logo": "googleone.png",
+        "cover": "googleone.jpg",
+        "primaryColor": "--blue-google",
+        "data": [
+            {
+                "name": "Gói 100GB",
+                "minPrice": 20,
+                "description": [
+                    "👏🏻 100 GB bộ nhớ",
+                    "👏🏻 Tiếp cận các chuyên gia của Google",
+                    "👏🏻 Chia sẻ với tối đa 5 người",
+                    "👏🏻 Lợi ích bổ sung cho thành viên"
+                ],
+                "pricing": [
+                    { "duration": 6, "price": 120 },
+                    { "duration": 12, "price": 200, "oldPrice": 240 }
+                ]
+            },
+            {
+                "name": "Gói 200GB",
+                "minPrice": 30,
+                "description": [
+                    "👏🏻 200 GB bộ nhớ",
+                    "👏🏻 Tiếp cận các chuyên gia của Google",
+                    "👏🏻 Chia sẻ với tối đa 5 người",
+                    "👏🏻 Lợi ích bổ sung cho thành viên"
+                ],
+                "pricing": [
+                    { "duration": 6, "price": 180 },
+                    { "duration": 12, "price": 300, "oldPrice": 360 }
+                ]
+            },
+            {
+                "name": "Gói 2TB",
+                "minPrice": 75,
+                "description": [
+                    "👏🏻 2 TB bộ nhớ",
+                    "👏🏻 Tiếp cận các chuyên gia của Google",
+                    "👏🏻 Chia sẻ với tối đa 5 người",
+                    "👏🏻 Lợi ích bổ sung cho thành viên"
+                ],
+                "pricing": [
+                    { "duration": 6, "price": 450 },
+                    { "duration": 12, "price": 750, "oldPrice": 900 }
+                ]
+            },
+            {
+                "name": "Gói 5TB",
+                "minPrice": 375,
+                "description": [
+                    "👏🏻 5 TB bộ nhớ",
+                    "👏🏻 Tiếp cận các chuyên gia của Google",
+                    "👏🏻 Chia sẻ với tối đa 5 người",
+                    "👏🏻 Lợi ích bổ sung cho thành viên"
+                ],
+                "pricing": [
+                    { "duration": 6, "price": 2250 },
+                    { "duration": 12, "price": 3750, "oldPrice": 4500 }
                 ]
             }
         ]

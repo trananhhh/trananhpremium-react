@@ -1,60 +1,57 @@
-import {
-    Button,
-    HStack,
-    Modal,
-    ModalBody,
-    ModalCloseButton,
-    ModalContent,
-    ModalFooter,
-    ModalHeader,
-    ModalOverlay,
-    useDisclosure,
-} from '@chakra-ui/react';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import Commitments from '../components/Commitments/Commitments';
+import ContactModal from '../components/ContactModal/ContactModal';
 import FloatLogo from '../components/FloatLogo/FloatLogo';
 import Footer from '../components/Footer/Footer';
 // import Loading from '../components/Loading/Loading';
+import { useDispatch, useSelector } from 'react-redux';
 import Members from '../components/Members/Members';
 import NavBar from '../components/NavBar/NavBar';
 import Products from '../components/Products/Products';
 import Statistics from '../components/Statistics/Statistics';
+import DetailsPage from '../view/details';
 import Home from '../view/home';
-import Netflix from '../view/netflix';
-import Spotify from '../view/spotify';
 
-// import { FaFacebook, FaTwitter } from 'react-icons/fa';
-
-export const RouteConfig = {
-    home: `/`,
-    spotify: '/spotify',
-    netflix: '/netflix',
-};
+import data from '../data.json';
+import { closeModal } from '../redux/modalSlice';
 
 const AppRouter = () => {
-    // const [loaded, setLoaded] = useState(false);
+    const dispatch = useDispatch();
     const location = useLocation();
+    const [renderRoute, setRenderRoute] = useState([]);
+    const isModalOpen = useSelector((state) => state.modal.isModalOpen);
+    // const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         scroll.scrollToTop();
-        // console.log(location.pathname);
     }, [location]);
 
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    useEffect(() => {
+        let tmpRoute = [];
+        Object.keys(data).forEach((key) =>
+            tmpRoute.push(
+                <Route
+                    key={key}
+                    path={'/' + key}
+                    element={<DetailsPage productData={data[key]} />}
+                />
+            )
+        );
+        setRenderRoute(tmpRoute);
+    }, []);
 
-    // useEffect(() => setLoaded(true), []);
+    console.log(renderRoute);
 
     return (
         <div className="overflow-x-hidden">
             {location.pathname !== '/' && <FloatLogo className="md:hidden" />}
             {/* {!loaded && <Loading />} */}
-            <NavBar onOpenModal={onOpen} />
+            <NavBar />
             <Routes>
-                <Route path={RouteConfig.home} element={<Home />} />
-                <Route path={RouteConfig.spotify} element={<Spotify />} />
-                <Route path={RouteConfig.netflix} element={<Netflix />} />
+                <Route path={'/'} element={<Home />} />
+                {renderRoute}
             </Routes>
 
             <Products />
@@ -63,43 +60,10 @@ const AppRouter = () => {
             <Members />
             <Footer />
 
-            <Modal className="ml-[-8px]" isOpen={isOpen} onClose={onClose}>
-                <ModalOverlay />
-                <ModalContent>
-                    <ModalHeader>
-                        <i className="fa-regular fa-circle-user mr-2"></i>Các
-                        kênh hỗ trợ
-                    </ModalHeader>
-                    <ModalCloseButton />
-                    <ModalBody>
-                        <HStack>
-                            <Button
-                                colorScheme="facebook"
-                                leftIcon={
-                                    <i className="fa-brands fa-facebook"></i>
-                                }
-                            >
-                                Facebook
-                            </Button>
-                            <Button
-                                colorScheme="twitter"
-                                leftIcon={
-                                    <i className="fa-brands fa-instagram"></i>
-                                }
-                            >
-                                Twitter
-                            </Button>
-                        </HStack>
-                    </ModalBody>
-
-                    <ModalFooter>
-                        {/* <Button colorScheme="blue" mr={3} onClick={onClose}>
-                            Close
-                        </Button>
-                        <Button variant="ghost">Secondary Action</Button> */}
-                    </ModalFooter>
-                </ModalContent>
-            </Modal>
+            <ContactModal
+                isOpen={isModalOpen}
+                onClose={() => dispatch(closeModal())}
+            />
         </div>
     );
 };

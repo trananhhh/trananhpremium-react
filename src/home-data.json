@@ -25,6 +25,14 @@
         },
 
         {
+            "productName": "Google One",
+            "route": "/googleone",
+            "image": "googleone.png",
+            "price": 20,
+            "oldPrice": 45
+        },
+
+        {
             "productName": "Grammarly",
             "insta": "trananhpremium",
             "image": "grammarly.png",
@@ -54,14 +62,6 @@
             "image": "office.png",
             "price": 20,
             "oldPrice": 110
-        },
-
-        {
-            "productName": "Nord VPN",
-            "insta": "trananhpremium",
-            "image": "nordvpn.png",
-            "price": 30,
-            "oldPrice": 276
         }
     ],
     "statistics": [

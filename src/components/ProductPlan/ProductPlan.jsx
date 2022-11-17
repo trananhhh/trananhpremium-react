@@ -7,6 +7,8 @@ import {
     Text,
 } from '@chakra-ui/react';
 import React from 'react';
+import { openModal } from '../../redux/modalSlice';
+import { useDispatch } from 'react-redux';
 
 import './index.scss';
 
@@ -17,6 +19,7 @@ const ProductPlan = ({
     pricing,
     primaryColor,
 }) => {
+    const dispatch = useDispatch();
     return (
         <div className="md:mx-4">
             <Accordion allowMultiple className="product-plans">
@@ -48,7 +51,8 @@ const ProductPlan = ({
                     <AccordionPanel pb={4}>
                         {pricing.map((item, index) => (
                             <Box
-                                className="plan-option"
+                                onClick={() => dispatch(openModal())}
+                                className="plan-option cursor-pointer"
                                 key={index}
                                 style={{
                                     '--props-color':

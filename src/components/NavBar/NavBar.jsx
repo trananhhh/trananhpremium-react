@@ -1,10 +1,12 @@
-import { Box, Image } from '@chakra-ui/react';
 import React from 'react';
+import { Box, Image } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
-import { RouteConfig } from '../../router';
+import { openModal } from '../../redux/modalSlice';
 
-const NavBar = ({ onOpenModal }) => {
+const NavBar = () => {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     return (
@@ -30,7 +32,7 @@ const NavBar = ({ onOpenModal }) => {
                 </div>
                 <div
                     onClick={() => {
-                        navigate(RouteConfig.home);
+                        navigate('/');
                     }}
                     className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb] px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
                 >
@@ -54,7 +56,7 @@ const NavBar = ({ onOpenModal }) => {
                     </span>
                 </Link>
                 <Box
-                    onClick={() => onOpenModal()}
+                    onClick={() => dispatch(openModal())}
                     className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb]  px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
                     <i className="fa-solid text-2xl md:text-base fa-message"></i>
