@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { RouteConfig } from '../../router';
 
-const NavBar = () => {
+const NavBar = ({ onOpenModal }) => {
     const navigate = useNavigate();
 
     return (
@@ -53,7 +53,10 @@ const NavBar = () => {
                         Sản phẩm
                     </span>
                 </Link>
-                <Box className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb]  px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer">
+                <Box
+                    onClick={() => onOpenModal()}
+                    className="flex text-gray-600 font-semibold text-md hover:bg-[#e5e7eb]  px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
+                >
                     <i className="fa-solid text-2xl md:text-base fa-message"></i>
                     <span className="hidden md:inline-block ml-2">Liên hệ</span>
                 </Box>

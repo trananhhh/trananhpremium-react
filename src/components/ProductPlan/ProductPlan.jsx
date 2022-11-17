@@ -25,7 +25,7 @@ const ProductPlan = ({
                         className="product-plan md:min-w-[360px]"
                         style={{ '--props-color': 'var(' + primaryColor + ')' }}
                     >
-                        <Box className="container">
+                        <Box className="container bg-white">
                             <Box className="header">
                                 <h2 className="name">{name}</h2>
                                 <span className="price">{minPrice}.000đ</span>
