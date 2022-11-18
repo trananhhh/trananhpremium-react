@@ -1,6 +1,10 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { openModal } from '../../../redux/modalSlice';
 
 const Welcome = () => {
+    const dispatch = useDispatch();
+
     return (
         <div
             className={
@@ -44,14 +48,14 @@ const Welcome = () => {
                         </div>
                     </div>
                     <div className="action-btns .reveal lg:mt-[-3rem]">
-                        <a
-                            className="bg-red-700 text-white p-4 rounded-full font-bold md:text-2xl md:px-8 md:py-6 lg:text-lg lg:px-5 lg:py-4 hover:drop-shadow-[0px_4px_16px_rgba(0,0,0,0.3)] transition-all ease-in-out"
+                        <span
+                            className="bg-red-700 text-white p-4 px-6 rounded-full font-bold md:text-xl md:px-10 md:py-5 lg:text-lg lg:px-8 lg:py-4 hover:drop-shadow-[0px_4px_16px_rgba(0,0,0,0.3)] transition-all ease-in-out"
                             id="direct-btn"
-                            href="https://www.instagram.com/trananh.spotify/"
+                            onClick={() => dispatch(openModal())}
                         >
                             <i className="fa-solid fa-message mr-2"></i>
                             Liên hệ ngay
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>

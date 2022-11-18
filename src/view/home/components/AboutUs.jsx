@@ -1,3 +1,4 @@
+import { Tag } from '@chakra-ui/react';
 import React from 'react';
 
 const AboutUs = () => {
@@ -7,13 +8,13 @@ const AboutUs = () => {
             className="min-h-[75vh] md:min-h-[65vh] flex flex-col px-8 mt-[-4rem] max-w-[1200px] mx-auto lg:mt-8 lg:min-h-[50vh]"
         >
             <div className="grid lg:grid-cols-7 grid-flow-row-dense lg:gap-x-8">
-                <h1 className="text-center font-bold mb-4 text-3xl lg:text-4xl md:text-5xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-3">
+                <span className="text-center font-bold mb-4 text-3xl lg:text-4xl md:text-5xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-3 bg">
                     Về
-                    <span className="font-[billCorp] rounded-xl opacity-90 mx-2">
+                    <span className="font-[billCorp] opacity-90 mx-2">
                         trananh
                         <span className=" opacity-80 ml-0 pl-0">premium</span>
                     </span>
-                </h1>
+                </span>
                 <div className="rounded-xl overflow-hidden .reveal drop-shadow-[-8px_8px_16px_rgba(0,0,0,0.25)] my-8 transition-all lg:order-1 lg:row-span-2 lg:h-full lg:my-0 lg:col-span-4">
                     <img
                         className="lg:object-cover md:h-[100%]"

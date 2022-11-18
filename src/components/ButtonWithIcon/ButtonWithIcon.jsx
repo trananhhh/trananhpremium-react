@@ -1,14 +1,20 @@
 import { Button, Image, Text } from '@chakra-ui/react';
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { closeModal } from '../../redux/modalSlice';
+import { loading } from '../../redux/uiSlice';
 import './index.scss';
 
 const ButtonWithIcon = ({ text, iconSrc, href }) => {
+    const dispatch = useDispatch();
     return (
         <Button
             width="100%"
             size="lg"
             justifyContent="flex-start"
             onClick={() => {
+                dispatch(closeModal());
+                dispatch(loading());
                 window.location.href = href;
             }}
         >

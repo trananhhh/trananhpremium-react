@@ -1,10 +1,19 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { loading } from '../../redux/uiSlice';
 
 export default function MemberItem({ name, username, imageSrc, disable }) {
+    const dispatch = useDispatch();
+
     return (
         <div>
-            <a
-                href={`https://www.instagram.com/${username}/`}
+            <span
+                onClick={() => {
+                    if (!disable) {
+                        dispatch(loading());
+                        window.location.href = `https://www.instagram.com/${username}/`;
+                    }
+                }}
                 className={
                     'xl:justify-start xl:items-center xl:flex-row bg-zinc-800 px-2 py-4 rounded-2xl flex flex-col items-center min-h-full' +
                     (disable
@@ -26,7 +35,7 @@ export default function MemberItem({ name, username, imageSrc, disable }) {
                         @{username}
                     </p>
                 </div>
-            </a>
+            </span>
         </div>
     );
 }

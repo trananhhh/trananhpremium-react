@@ -74,9 +74,9 @@ const Footer = () => {
                 </div>
             </div>
             <br />
-            <span className="text-xs md:text-base text-gray-600 pb-12 pt-8 px-12 text-center">
+            <span className="text-xs md:text-base text-gray-600 pb-12 pt-8 px-12 text-center mb-20 lg:mb-0">
                 © 2020 by
-                <span className="font-[billCorp] rounded-xl opacity-90">
+                <span className="font-[billCorp] rounded-xl opacity-90 ml-1">
                     trananh
                     <span className="opacity-80 ml-0 pl-0">premium</span>
                 </span>
