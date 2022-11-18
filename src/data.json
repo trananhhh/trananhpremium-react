@@ -7,6 +7,32 @@
         "logo": "spotify.png",
         "cover": "spotify.png",
         "primaryColor": "--green-spotify",
+        "policy": {
+            "notes": [
+                "Đơn hàng của quý khách sẽ được xử lý trong vòng tối đa 3h.",
+                "Chúng mình sẽ tiến hành đăng nhập vào tài khoản Spotify của bạn và nâng cấp.",
+                "Account của bạn sẽ được nâng cấp dưới dạng tham gia Family của Spotify ở quốc gia khác."
+            ],
+            "disclaimer": [
+                "Khách hàng thoát family trong thời gian sử dụng",
+                "Khách hàng thay đổi thông tin Email, quốc gia của tài khoản",
+                "Khách hàng thay đổi thông tin gói cước của tài khoản"
+            ],
+            "faq": [
+                {
+                    "question": "Đây có phải là tài khoản Spotify (Account Spotify) tạo sẵn?",
+                    "answer": "Sai. Đây là gói gia hạn trên chính tài khoản Spotify mà bạn đang sử dụng. Bạn không cần đổi sang tài khoản mới để sử dụng Premium."
+                },
+                {
+                    "question": "Spotify có thể sử dụng nhiều thiết bị cùng lúc đươc không?",
+                    "answer": "Bạn có thể đăng nhập trên nhiều thiết bị, tuy nhiên Spotify chỉ hỗ trợ phát nhạc từ 1 thiết bị tại 1 thời điểm."
+                },
+                {
+                    "question": "Tài khoản của tôi vẫn còn hạn Premium trên Spotify, tôi có thể gia hạn gói cước này không?",
+                    "answer": "Bạn cần huỷ gói cước hiện có, hoặc đợi gói cước cũ hết hạn sau đó mua gói cước bên mình."
+                }
+            ]
+        },
         "data": [
             {
                 "name": "Gói Tiết kiệm",
@@ -48,6 +74,35 @@
         "logo": "netflix.png",
         "cover": "netflix.jpg",
         "primaryColor": "--red-netflix",
+        "policy": {
+            "notes": [
+                "Hệ thống có thể tự động thay đổi mật khẩu nếu account bị đối tượng xấu phá hoặc có người dùng không sử dụng nữa. Password mới sẽ được tự động gửi qua mail của bạn.",
+                "Bạn vui lòng không thay đổi mật khẩu và thông tin tài khoản, chỉ sử dụng đúng User được cung cấp. Chúng mình có quyền thu hồi tài khoản trong trường hợp khách hàng sử dụng vi phạm chính sách trên."
+            ],
+            "disclaimer": [
+                "Khách hàng tự ý thay đổi thông tin tài khoản bao gồm email đăng nhập và mật khẩu",
+                "Khách hàng tự ý thay đổi thông tin thanh toán/gói cước của tài khoản",
+                "Khách hàng chia sẻ tài khoản, sử dụng nhiều hơn 1 thiết bị tại 1 thời điểm"
+            ],
+            "faq": [
+                {
+                    "question": "Tôi có thể sử dụng tài khoản ở nhiều thiết bị cùng lúc không?",
+                    "answer": "Nếu gói của bạn mua là 1 slot thì bạn chỉ được xem 1 thiết bị tại 1 thời điểm."
+                },
+                {
+                    "question": "Tôi có thể đặt mã PIN cho profile của mình được không?",
+                    "answer": "Tất nhiên là được! Bạn có thể đặt PIN để không cho người khác dùng profile của mình nha."
+                },
+                {
+                    "question": "Tôi có thể tuỳ chỉnh profile của mình được không?",
+                    "answer": "Bạn vui lòng KHÔNG thay đổi tên profile để chúng mình tiện quản lí, nếu bạn tự ý thay đổi, profile sẽ bị thu hồi. Còn lại bạn có thể tuỳ ý đổi avatar, ngôn ngữ nha!"
+                },
+                {
+                    "question": "Trong quá trình sử dụng tôi gặp tình trạng tài khoản bị lỗi thì phải làm sao?",
+                    "answer": "Đừng lo, bạn vui lòng liên hệ ngay với bộ phận CSKH, chúng mình sẽ xử lý lỗi bạn gặp phải nhanh nhất có thể. Bộ phận CSKH online từ 08h00 - 0h00 bạn nhé."
+                }
+            ]
+        },
         "data": [
             {
                 "name": "Gói 2-End",
