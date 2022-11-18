@@ -164,6 +164,31 @@
         "logo": "youtube.png",
         "cover": "youtube.jpg",
         "primaryColor": "--red-netflix",
+        "policy": {
+            "notes": [
+                "Đơn hàng của quý khách sẽ được xử lý trong vòng tối đa 3h.",
+                "Account của bạn sẽ được nâng cấp dưới dạng tham gia Family của Youtube ở quốc gia khác."
+            ],
+            "disclaimer": [
+                "Khách hàng thoát family trong thời gian sử dụng",
+                "Khách hàng thay đổi thông tin Email, quốc gia của tài khoản",
+                "Khách hàng thay đổi thông tin gói cước của tài khoản"
+            ],
+            "faq": [
+                {
+                    "question": "Đây có phải là tài khoản Youtube Premium tạo sẵn?",
+                    "answer": "Sai. Đây là gói gia hạn trên chính tài khoản Youtube mà bạn đang sử dụng. Bạn không cần đổi sang tài khoản mới để sử dụng Premium."
+                },
+                {
+                    "question": "Youtube Premium có thể sử dụng nhiều thiết bị cùng lúc đươc không?",
+                    "answer": "Có! Bạn có thể đăng nhập và sử dụng trên nhiều thiết bị cùng lúc."
+                },
+                {
+                    "question": "Tài khoản của tôi vẫn còn hạn Premium trên Youtube, tôi có thể gia hạn gói cước này không?",
+                    "answer": "Bạn cần huỷ gói cước hiện có, hoặc đợi gói cước cũ hết hạn sau đó mua gói cước bên mình."
+                }
+            ]
+        },
         "data": [
             {
                 "name": "Gói Trial",
@@ -210,6 +235,27 @@
         "logo": "googleone.png",
         "cover": "googleone.jpg",
         "primaryColor": "--blue-google",
+        "policy": {
+            "notes": [
+                "Đơn hàng của quý khách sẽ được xử lý trong vòng tối đa 3h.",
+                "Account của bạn sẽ được nâng cấp dưới dạng tham gia Family của Google One ở quốc gia khác."
+            ],
+            "disclaimer": [
+                "Khách hàng thoát family trong thời gian sử dụng",
+                "Khách hàng thay đổi thông tin Email, quốc gia của tài khoản",
+                "Khách hàng thay đổi thông tin gói cước của tài khoản"
+            ],
+            "faq": [
+                {
+                    "question": "Đây có phải là tài khoản Google One tạo sẵn?",
+                    "answer": "Sai. Đây là gói gia hạn trên chính tài khoản Google mà bạn đang sử dụng. Bạn không cần đổi sang tài khoản mới để sử dụng Premium."
+                },
+                {
+                    "question": "Tài khoản của tôi vẫn còn hạn trên Google One, tôi có thể gia hạn gói cước này không?",
+                    "answer": "Bạn cần huỷ gói cước hiện có, hoặc đợi gói cước cũ hết hạn sau đó mua gói cước bên mình."
+                }
+            ]
+        },
         "data": [
             {
                 "name": "Gói 100GB",
@@ -263,6 +309,25 @@
         "logo": "grammarly.png",
         "cover": "grammarly.png",
         "primaryColor": "--green-grammarly",
+        "policy": {
+            "notes": [
+                "Đơn hàng của quý khách sẽ được xử lý trong vòng tối đa 3h."
+            ],
+            "disclaimer": [
+                "Khách hàng thay đổi thông tin Email, quốc gia của tài khoản",
+                "Khách hàng thay đổi thông tin gói cước của tài khoản"
+            ],
+            "faq": [
+                {
+                    "question": "Đây có phải là tài khoản Grammarly Premium tạo sẵn?",
+                    "answer": "Đúng. Với gói private bạn sẽ được cấp link để đổi mật khẩu nếu muốn."
+                },
+                {
+                    "question": "Grammarly có thể sử dụng nhiều thiết bị cùng lúc đươc không?",
+                    "answer": "Có! Bạn có thể đăng nhập và sử dụng trên nhiều thiết bị cùng lúc."
+                }
+            ]
+        },
         "data": [
             {
                 "name": "Gói Shared",

@@ -52,16 +52,16 @@ const DetailsPage = ({ productData }) => {
                 ))}
             </GroupBorder>
             <Card
-                width="80%"
+                width="85%"
                 maxWidth="800px"
                 backgroundColor="white"
                 borderRadius="3xl"
-                className="mt-12 p-4 pb-10 leading-8"
+                className="mt-12 py-4 px-2 pb-10 leading-6"
             >
                 <CardHeader>
                     <Heading size="lg">Chính sách bảo hành</Heading>
                 </CardHeader>
-                <CardBody paddingTop="0px" paddingBottom="0px" className="px-8">
+                <CardBody paddingTop="0px" paddingBottom="0px" className="px-4">
                     <Accordion allowMultiple allowToggle>
                         <AccordionItem>
                             <AccordionButton
@@ -71,7 +71,7 @@ const DetailsPage = ({ productData }) => {
                                 <Text size="md">Thời gian bảo hành</Text>
                                 <AccordionIcon className="ml-2" />
                             </AccordionButton>
-                            <AccordionPanel>
+                            <AccordionPanel textAlign="justify">
                                 <Text>
                                     Thời gian bảo hành tương ứng với thời hạn
                                     gói cước khách mua.
@@ -94,7 +94,7 @@ const DetailsPage = ({ productData }) => {
                                 <Text size="md">Chính sách bảo hành</Text>
                                 <AccordionIcon className="ml-2" />
                             </AccordionButton>
-                            <AccordionPanel>
+                            <AccordionPanel textAlign="justify">
                                 <UnorderedList>
                                     <ListItem>
                                         Tài khoản phát sinh lỗi trong quá trình
@@ -118,7 +118,7 @@ const DetailsPage = ({ productData }) => {
                                 <Text size="md">Chính sách hoàn tiền</Text>
                                 <AccordionIcon className="ml-2" />
                             </AccordionButton>
-                            <AccordionPanel>
+                            <AccordionPanel textAlign="justify">
                                 <UnorderedList className="mb-4">
                                     <ListItem>
                                         Khách hàng sẽ được hoàn tiền trong
@@ -151,7 +151,7 @@ const DetailsPage = ({ productData }) => {
                                     đ. Sử dụng được 12 ngày thì phát sinh lỗi.
                                     Như vậy số tiền được hoàn lại sẽ là:
                                     <br />
-                                    <Code fontSize="lg" margin="8px">
+                                    <Code margin="8px">
                                         99.000 * (30 - 12)/30 = 59.400 làm tròn
                                         thành 60.000
                                     </Code>
@@ -169,28 +169,32 @@ const DetailsPage = ({ productData }) => {
                             </AccordionPanel>
                         </AccordionItem>
 
-                        <AccordionItem>
-                            <AccordionButton
-                                display="flex"
-                                justifyContent="space-between"
-                            >
-                                <Text size="md">Miễn trừ trách nhiệm</Text>
-                                <AccordionIcon className="ml-2" />
-                            </AccordionButton>
-                            <AccordionPanel>
-                                <Text>
-                                    Shop có thể từ chối bảo hành trong các
-                                    trường hợp
+                        {productData.policy.disclaimer && (
+                            <AccordionItem>
+                                <AccordionButton
+                                    display="flex"
+                                    justifyContent="space-between"
+                                >
+                                    <Text size="md">Miễn trừ trách nhiệm</Text>
+                                    <AccordionIcon className="ml-2" />
+                                </AccordionButton>
+                                <AccordionPanel textAlign="justify">
+                                    <Text>
+                                        Shop có thể từ chối bảo hành trong các
+                                        trường hợp
+                                    </Text>
                                     <UnorderedList>
                                         {productData.policy.disclaimer.map(
                                             (item) => (
-                                                <ListItem>{item}</ListItem>
+                                                <ListItem key={item}>
+                                                    {item}
+                                                </ListItem>
                                             )
                                         )}
                                     </UnorderedList>
-                                </Text>
-                            </AccordionPanel>
-                        </AccordionItem>
+                                </AccordionPanel>
+                            </AccordionItem>
+                        )}
                     </Accordion>
                 </CardBody>
                 {productData.policy.faq && (
@@ -205,7 +209,7 @@ const DetailsPage = ({ productData }) => {
                         >
                             <Accordion allowMultiple allowToggle>
                                 {productData.policy.faq.map((item) => (
-                                    <AccordionItem>
+                                    <AccordionItem key={item.question}>
                                         <AccordionButton
                                             display="flex"
                                             justifyContent="space-between"
@@ -215,7 +219,7 @@ const DetailsPage = ({ productData }) => {
                                             </Text>
                                             <AccordionIcon className="ml-2" />
                                         </AccordionButton>
-                                        <AccordionPanel>
+                                        <AccordionPanel textAlign="justify">
                                             <Text>{item.answer}</Text>
                                         </AccordionPanel>
                                     </AccordionItem>
@@ -227,11 +231,11 @@ const DetailsPage = ({ productData }) => {
             </Card>
             {productData.policy.notes && (
                 <Card
-                    width="80%"
+                    width="85%"
                     maxWidth="800px"
                     backgroundColor="orange.50"
                     borderRadius="3xl"
-                    className="mt-12 p-4 pb-10 leading-8"
+                    className="mt-12 p-4 pb-10 leading-6"
                 >
                     <CardHeader>
                         <Heading size="md">Lưu ý</Heading>
@@ -243,7 +247,7 @@ const DetailsPage = ({ productData }) => {
                     >
                         <UnorderedList spacing="16px" textAlign="justify">
                             {productData.policy.notes.map((item) => (
-                                <ListItem>{item}</ListItem>
+                                <ListItem key={item}>{item}</ListItem>
                             ))}
                         </UnorderedList>
                     </CardBody>
