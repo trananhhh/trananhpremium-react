@@ -1,4 +1,3 @@
-import { Tag } from '@chakra-ui/react';
 import React from 'react';
 
 const AboutUs = () => {
