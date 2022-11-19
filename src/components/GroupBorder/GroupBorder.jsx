@@ -8,7 +8,7 @@ export default function GroupBorder({ children }) {
             maxWidth="1200px"
             justifyContent="center"
             className={
-                'group-border flex-col lg:flex-row md:mt-20 md:pt-8 md:pb-10 w-[85vw] md:w-fit'
+                'group-border flex-col lg:flex-row mt-8 md:mt-20 md:pt-8 md:pb-14 md:px-12 w-[93vw] md:w-fit'
             }
         >
             {children}

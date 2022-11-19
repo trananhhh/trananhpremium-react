@@ -51,13 +51,15 @@ const AppRouter = () => {
                 <Route path={'/'} element={<Home />} />
                 {renderRoute}
             </Routes>
-
             <Products />
-            <Commitments />
-            <Statistics />
-            <Members />
+            {location.pathname === '/' && (
+                <>
+                    <Commitments />
+                    <Statistics />
+                    <Members />
+                </>
+            )}
             <Footer />
-
             <ContactModal
                 isOpen={isModalOpen}
                 onClose={() => dispatch(closeModal())}
