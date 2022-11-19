@@ -19,14 +19,14 @@ const NavBar = () => {
                     <Image
                         className="my-[1px]"
                         src={
-                            process.env.PUBLIC_URL + '/assets/logo-no-text.png'
+                            process.env.PUBLIC_URL + '/assets/logo-no-text.webp'
                         }
                     />
                     <Image
                         className="mt-1"
                         src={
                             process.env.PUBLIC_URL +
-                            '/assets/trananhpremium.png'
+                            '/assets/trananhpremium.webp'
                         }
                     />
                 </div>

@@ -15,7 +15,7 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 import React from 'react';
-import { isIOS } from 'react-device-detect';
+// import { isIOS } from 'react-device-detect';
 
 export default function PolicyBox({ productData }) {
     return (
@@ -36,7 +36,11 @@ export default function PolicyBox({ productData }) {
                     <Heading size="lg">Chính sách bảo hành</Heading>
                 </CardHeader>
                 <CardBody paddingTop="0px" paddingBottom="0px">
-                    <Accordion allowMultiple allowToggle reduceMotion={isIOS}>
+                    <Accordion
+                        allowMultiple
+                        allowToggle
+                        //  reduceMotion={isIOS}
+                    >
                         <AccordionItem>
                             <AccordionButton
                                 display="flex"
@@ -194,7 +198,7 @@ export default function PolicyBox({ productData }) {
                             <Accordion
                                 allowMultiple
                                 allowToggle
-                                reduceMotion={isIOS}
+                                // reduceMotion={isIOS}
                             >
                                 {productData.policy.faq.map((item) => (
                                     <AccordionItem key={item.question}>

@@ -3,7 +3,7 @@
         {
             "productName": "Netflix",
             "route": "/netflix",
-            "image": "netflix.png",
+            "image": "netflix.webp",
             "price": 40,
             "oldPrice": 260
         },
@@ -11,7 +11,7 @@
         {
             "productName": "Spotify",
             "route": "/spotify",
-            "image": "spotify.png",
+            "image": "spotify.webp",
             "price": 19,
             "oldPrice": 59
         },
@@ -19,7 +19,7 @@
         {
             "productName": "Youtube Premium",
             "route": "/youtube",
-            "image": "youtube.png",
+            "image": "youtube.webp",
             "price": 32,
             "oldPrice": 276
         },
@@ -27,7 +27,7 @@
         {
             "productName": "Google One",
             "route": "/googleone",
-            "image": "googleone.png",
+            "image": "googleone.webp",
             "price": 20,
             "oldPrice": 45
         },
@@ -35,7 +35,7 @@
         {
             "productName": "Grammarly",
             "route": "/grammarly",
-            "image": "grammarly.png",
+            "image": "grammarly.webp",
             "price": 20,
             "oldPrice": 276
         },
@@ -43,7 +43,7 @@
         {
             "productName": "Disney+",
             "insta": "trananhpremium",
-            "image": "disney.png",
+            "image": "disney.webp",
             "price": 35,
             "oldPrice": 185
         },
@@ -51,7 +51,7 @@
         {
             "productName": "Canva",
             "insta": "trananhpremium",
-            "image": "canva.png",
+            "image": "canva.webp",
             "price": 6,
             "oldPrice": 110
         },
@@ -59,7 +59,7 @@
         {
             "productName": "Office 365",
             "insta": "trananhpremium",
-            "image": "office.png",
+            "image": "office.webp",
             "price": 20,
             "oldPrice": 110
         }
@@ -82,37 +82,37 @@
         {
             "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗦𝗣𝗢𝗧𝗜𝗙𝗬",
             "username": "trananh.spotify",
-            "imageSrc": "trananh.spotify.jpg",
+            "imageSrc": "trananh.spotify.webp",
             "disable": false
         },
         {
             "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗛𝗘𝗧",
             "username": "trananhpremium",
-            "imageSrc": "trananhpremium.png",
+            "imageSrc": "trananhpremium.webp",
             "disable": false
         },
         {
             "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗡𝗘𝗧𝗙𝗟𝗜𝗫",
             "username": "trananh.netflixx",
-            "imageSrc": "trananh.netflixx.png",
+            "imageSrc": "trananh.netflixx.webp",
             "disable": false
         },
         {
             "name": "𝗧𝗥𝗔𝗡𝗔𝗡𝗛 𝗕𝗔𝗡 𝗡𝗘𝗧𝗙𝗟𝗜𝗫",
             "username": "trananh.netflix",
-            "imageSrc": "trananh.netflix.png",
+            "imageSrc": "trananh.netflix.webp",
             "disable": true
         },
         {
             "name": "Tài khoản Spotify Premium",
             "username": "taikhoan.spotifypremium",
-            "imageSrc": "taikhoan.spotifypremium.jpg",
+            "imageSrc": "taikhoan.spotifypremium.webp",
             "disable": false
         },
         {
             "name": " Netflik giá giẻ vải",
             "username": "netflik.giagievai",
-            "imageSrc": "netflik.giagievai.jpg",
+            "imageSrc": "netflik.giagievai.webp",
             "disable": true
         }
     ],

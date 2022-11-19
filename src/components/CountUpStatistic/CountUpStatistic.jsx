@@ -9,8 +9,8 @@ const CountUpStatistic = ({ number, text }) => {
     const dispatch = useDispatch();
 
     return (
-        <div className="flex flex-col items-center justify-center mb-5">
-            <div className="font-black text-6xl mt-4 lg:text-8xl font-['Roboto Condensed']">
+        <div className="flex flex-col items-center justify-center py-8">
+            <div className="font-black text-6xl lg:text-7xl font-mono">
                 <CountUp
                     end={number}
                     preserveValue
@@ -33,7 +33,7 @@ const CountUpStatistic = ({ number, text }) => {
                     )}
                 </CountUp>
             </div>
-            <p className="mt-5 text-md lg:text-xl">{text}</p>
+            <p className="mt-4 text-md lg:text-xl">{text}</p>
         </div>
     );
 };

@@ -9,7 +9,7 @@ const Welcome = () => {
     return (
         <Box
             bgImage={
-                process.env.PUBLIC_URL + '/assets/backgrounds/section-1.png'
+                process.env.PUBLIC_URL + '/assets/backgrounds/section-1.webp'
             }
             className={
                 'bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex-col pt-[24vh] flex lg:pt-0 lg:justify-center'
@@ -24,7 +24,7 @@ const Welcome = () => {
                     <img
                         className="max-h-36 md:max-h-64"
                         src={
-                            process.env.PUBLIC_URL + '/assets/logo-no-text.png'
+                            process.env.PUBLIC_URL + '/assets/logo-no-text.webp'
                         }
                         alt="logo-no-text"
                         draggable="false"

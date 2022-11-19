@@ -20,7 +20,7 @@ export default function HomeProductItem({
 
     return (
         <div
-            className="product-item cursor-pointer text-gray-200 drop-shadow-[0_0_2px_rgba(0,0,0,0.8)]"
+            className="product-item cursor-pointer text-gray-200"
             onClick={() => {
                 if (route != null && route !== undefined) navigate(route);
                 else
@@ -35,7 +35,7 @@ export default function HomeProductItem({
                     alt={image}
                 />
             </div>
-            <Stat>
+            <Stat className="mix-blend-difference">
                 <StatLabel>{productName}</StatLabel>
                 <StatNumber className="mt-[-4px]">{price}.000đ</StatNumber>
                 <StatHelpText>

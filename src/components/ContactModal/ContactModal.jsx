@@ -3,15 +3,14 @@ import {
     ModalBody,
     ModalCloseButton,
     ModalContent,
-    ModalFooter,
     ModalHeader,
     ModalOverlay,
     Stack,
 } from '@chakra-ui/react';
+import { Player } from '@lottiefiles/react-lottie-player';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import ButtonWithIcon from '../ButtonWithIcon/ButtonWithIcon';
-import { Player } from '@lottiefiles/react-lottie-player';
 import './index.scss';
 
 const ContactModal = ({ isOpen, onClose }) => {
@@ -28,7 +27,7 @@ const ContactModal = ({ isOpen, onClose }) => {
             onClose={onClose}
         >
             <ModalOverlay />
-            <ModalContent className="mx-8">
+            <ModalContent className="mx-8 pb-4">
                 <ModalHeader>
                     <i className="fa-regular fa-circle-user mr-2"></i>Các kênh
                     hỗ trợ
@@ -42,19 +41,19 @@ const ContactModal = ({ isOpen, onClose }) => {
                         }
                         background="transparent"
                         speed="1"
-                        style={{ width: '100%' }}
+                        style={{ width: '100%', minHeight: '300px' }}
                         loop
                         autoplay
                     ></Player>
                     <Stack marginTop="12px">
                         <ButtonWithIcon
                             text="Messenger"
-                            iconSrc="messenger.png"
+                            iconSrc="messenger.webp"
                             href="https://m.me/trananhpremium"
                         />
                         <ButtonWithIcon
                             text="Instagram"
-                            iconSrc="insta.png"
+                            iconSrc="insta.webp"
                             href={
                                 'https://www.instagram.com/' + insta ??
                                 'trananhpremium'
@@ -62,18 +61,16 @@ const ContactModal = ({ isOpen, onClose }) => {
                         />
                         <ButtonWithIcon
                             text="Zalo"
-                            iconSrc="zalo.png"
+                            iconSrc="zalo.webp"
                             href="https://zalo.me/trananhpremium"
                         />
                         <ButtonWithIcon
                             text="Hotline"
-                            iconSrc="phone.png"
+                            iconSrc="phone.webp"
                             href="tel:0982202602"
                         />
                     </Stack>
                 </ModalBody>
-
-                <ModalFooter></ModalFooter>
             </ModalContent>
         </Modal>
     );

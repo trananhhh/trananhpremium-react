@@ -12,11 +12,11 @@ const FloatLogo = ({ className }) => {
         >
             <Image
                 className="my-[4px]"
-                src={process.env.PUBLIC_URL + '/assets/logo-no-text.png'}
+                src={process.env.PUBLIC_URL + '/assets/logo-no-text.webp'}
             />
             <Image
                 className="mt-1 mr-3"
-                src={process.env.PUBLIC_URL + '/assets/trananhpremium.png'}
+                src={process.env.PUBLIC_URL + '/assets/trananhpremium.webp'}
             />
         </div>
     );

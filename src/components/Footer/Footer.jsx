@@ -9,14 +9,15 @@ const Footer = () => {
                         <img
                             className="scale-110 mt-[-40px]"
                             src={
-                                process.env.PUBLIC_URL + '/assets/LOGO-dark.png'
+                                process.env.PUBLIC_URL +
+                                '/assets/LOGO-dark.webp'
                             }
                             alt=""
                         />
                     </div>
                     <p className="border-l-4 border-red-700 text-lg tracking-tight italic leading-6 text-justify bg-gray-200 rounded-2xl p-6">
                         Sứ mệnh của
-                        <span className="font-[billCorp] pt-2 py-1 opacity-90 mx-2">
+                        <span className="font-[billCorp] pt-2 py-1 opacity-90 mx-2 font-normal md:font-bold">
                             trananh
                             <span className="opacity-80 ml-0 pl-0">
                                 premium
@@ -47,6 +48,7 @@ const Footer = () => {
                         </a>
                     </p>
                 </div>
+
                 <div className="w-full lg:col-span-2">
                     <h4 className="border-l-4 border-red-700 pl-2 text-xl font-bold mb-4">
                         Nhận thông tin ưu đãi mới nhất
@@ -74,9 +76,9 @@ const Footer = () => {
                 </div>
             </div>
             <br />
-            <span className="text-xs md:text-base text-gray-600 pb-12 pt-8 px-12 text-center mb-20 lg:mb-0">
+            <span className="text-xs md:text-normal text-gray-600 pb-12 pt-8 px-12 text-center mb-20 lg:mb-0">
                 © 2020 by
-                <span className="font-[billCorp] opacity-90 ml-1">
+                <span className="font-[billCorp] opacity-90 ml-1 font-normal md:font-bold">
                     trananh
                     <span className="opacity-80 ml-0 pl-0">premium</span>
                 </span>

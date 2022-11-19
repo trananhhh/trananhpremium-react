@@ -7,7 +7,7 @@ const Commitments = () => {
     return (
         <div className="flex items-center justify-center flex-col pt-10 px-8 max-w-[1200px] mx-auto lg:px-0">
             <div className="text-container .reveal">
-                <h1 className="text-center font-bold text-3xl lg:text-4xl md:text-5xl">
+                <h1 className="text-center font-extrabold font-sans text-3xl md:text-5xl md:mb-6">
                     Cam kết từ chúng tôi
                 </h1>
             </div>

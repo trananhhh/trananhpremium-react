@@ -9,10 +9,10 @@ const Products = () => {
         <Box
             id="products"
             bgImage={
-                process.env.PUBLIC_URL + '/assets/backgrounds/section-3.png'
+                process.env.PUBLIC_URL + '/assets/backgrounds/section-3.webp'
             }
             className={
-                'bg-no-repeat bg-cover bg-top min-h-[140vh] md:min-h-[120vh] px-8 flex justify-center items-center lg:min-h-[145vh]'
+                'bg-no-repeat bg-cover bg-top h-[180vh] md:h-[120vh] lg:h-[145vh] px-8 flex justify-center items-center '
             }
         >
             <Element
@@ -20,13 +20,13 @@ const Products = () => {
                 className="flex-col flex justify-center items-center pt-8 max-w-[1200px] mx-auto lg:pt-0 w-full"
             >
                 <div className="top-container flex items-center justify-center w-full">
-                    <div className="text-container .reveal w-full drop-shadow-[0_0_2px_rgba(0,0,0,0.8)]">
+                    <div className="text-container .reveal w-full">
                         <h1
                             id="product-title"
-                            className="text-center font-bold mb-4 text-gray-200 px-8 text-3xl md:text-5xl md:mb-12"
+                            className="text-center font-extrabold font-sans mb-4 text-gray-200 px-8 text-3xl md:text-5xl md:mb-12 mix-blend-difference"
                         >
                             <span className="block md:inline">Sản phẩm</span>
-                            <span className="font-[billCorp] rounded-xl opacity-90 lg:mx-2 block md:inline-block mx-2">
+                            <span className="font-[billCorp] rounded-xl opacity-90 lg:mx-2 block md:inline-block mx-2 font-normal md:font-bold">
                                 trananh
                                 <span className="opacity-70 mx-0 px-0">
                                     premium

@@ -4,8 +4,8 @@
         "title": "Spotify Premium",
         "subtitle": "Nâng cấp trước, thanh toán sau.",
         "description": "Spotify là một dịch vụ cung cấp nhạc, podcast và video kỹ thuật số cho phép bạn truy cập hàng triệu bài hát và các nội dung khác của các nghệ sĩ trên khắp thế giới.",
-        "logo": "spotify.png",
-        "cover": "spotify.png",
+        "logo": "spotify.webp",
+        "cover": "spotify.webp",
         "primaryColor": "--green-spotify",
         "policy": {
             "notes": [
@@ -71,8 +71,8 @@
         "title": "Netflix",
         "subtitle": "Xem phim không giới hạn",
         "description": "Netflix là một dịch vụ xem video trực tuyến đến từ Mỹ, với kho video Netflix sở hữu cực “khủng”, chưa kể mọi video đều sở có bản quyền đầy đủ cùng chất lượng 4K.",
-        "logo": "netflix.png",
-        "cover": "netflix.jpg",
+        "logo": "netflix.webp",
+        "cover": "netflix.webp",
         "primaryColor": "--red-netflix",
         "policy": {
             "notes": [
@@ -161,8 +161,8 @@
         "title": "Youtube Premium",
         "subtitle": "Chặn quảng cáo và Nghe nhạc trong nền",
         "description": "Với YouTube Premium, bạn có thể xem hàng triệu video không có quảng cáo trên cả TV, máy chơi game,...",
-        "logo": "youtube.png",
-        "cover": "youtube.jpg",
+        "logo": "youtube.webp",
+        "cover": "youtube.webp",
         "primaryColor": "--red-netflix",
         "policy": {
             "notes": [
@@ -232,8 +232,8 @@
         "title": "Google One",
         "subtitle": "Giải phóng bộ nhớ của bạn",
         "description": "Google One cho phép bạn thiết lập sao lưu những dữ liệu quan trọng cần thiết từ trên điện thoại như hình ảnh, tin nhắn, danh bạ và những nội dung khác lên trên bộ lưu trữ đám mây của Google.",
-        "logo": "googleone.png",
-        "cover": "googleone.jpg",
+        "logo": "googleone.webp",
+        "cover": "googleone.webp",
         "primaryColor": "--blue-google",
         "policy": {
             "notes": [
@@ -306,8 +306,8 @@
         "title": "Grammarly",
         "subtitle": "Chỉnh sửa ngữ pháp, chính tả, dấu câu...",
         "description": "Grammarly là công cụ kiểm tra chính tả, ngữ pháp tiếng Anh theo thời gian thực. Tức là bạn nhập văn bản đến đâu Grammarly sẽ kiểm tra ngay đến đó.",
-        "logo": "grammarly.png",
-        "cover": "grammarly.png",
+        "logo": "grammarly.webp",
+        "cover": "grammarly.webp",
         "primaryColor": "--green-grammarly",
         "policy": {
             "notes": [
