@@ -10,7 +10,7 @@ const Welcome = () => {
             className={
                 'section bg-[url(' +
                 process.env.PUBLIC_URL +
-                "'/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex-col pt-56 flex lg:pt-0 lg:justify-center"
+                "'/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex-col pt-[30vh] flex lg:pt-0 lg:justify-center"
             }
             id="welcome"
         >
