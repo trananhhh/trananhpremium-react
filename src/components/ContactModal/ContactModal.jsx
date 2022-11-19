@@ -41,7 +41,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                         }
                         background="transparent"
                         speed="1"
-                        style={{ width: '100%', minHeight: '300px' }}
+                        style={{ width: '100%' }}
                         loop
                         autoplay
                     ></Player>
