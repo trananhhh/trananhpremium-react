@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs = () => {
     return (
@@ -45,15 +47,24 @@ const AboutUs = () => {
             </div>
             <div className="flex justify-between mt-8 flex-col items-center lg:flex-row lg:mt-12">
                 <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
-                    <i className="text-red-600 mr-2 fa-solid fa-circle-check"></i>
+                    <FontAwesomeIcon
+                        icon={faCircleCheck}
+                        className="text-red-600 mr-2"
+                    />
                     Tài khoản đầy đủ tính năng Premium
                 </p>
                 <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl my-3 lg:mx-6">
-                    <i className="text-red-600 mr-2 fa-solid fa-circle-check"></i>
+                    <FontAwesomeIcon
+                        icon={faCircleCheck}
+                        className="text-red-600 mr-2"
+                    />
                     Được update liên tục từ nhà phát hành
                 </p>
                 <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
-                    <i className="text-red-600 mr-2 fa-solid fa-circle-check"></i>
+                    <FontAwesomeIcon
+                        icon={faCircleCheck}
+                        className="text-red-600 mr-2"
+                    />
                     Được bảo hành bởi
                     <span className="font-[billCorp] pt-2 py-1 opacity-90 mx-1 font-normal md:font-bold">
                         trananh

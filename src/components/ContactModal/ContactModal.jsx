@@ -7,10 +7,13 @@ import {
     ModalOverlay,
     Stack,
 } from '@chakra-ui/react';
-import { Player } from '@lottiefiles/react-lottie-player';
 import React from 'react';
+import { Player } from '@lottiefiles/react-lottie-player';
 import { useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import ButtonWithIcon from '../ButtonWithIcon/ButtonWithIcon';
+
 import './index.scss';
 
 const ContactModal = ({ isOpen, onClose }) => {
@@ -29,8 +32,8 @@ const ContactModal = ({ isOpen, onClose }) => {
             <ModalOverlay />
             <ModalContent className="mx-8 pb-4">
                 <ModalHeader>
-                    <i className="fa-regular fa-circle-user mr-2"></i>Các kênh
-                    hỗ trợ
+                    <FontAwesomeIcon icon={faCircleUser} className="mr-2" />
+                    Các kênh hỗ trợ
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>

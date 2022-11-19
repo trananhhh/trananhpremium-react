@@ -2,6 +2,8 @@ import { Box } from '@chakra-ui/react';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { openModal } from '../../../redux/modalSlice';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMessage } from '@fortawesome/free-solid-svg-icons';
 
 const Welcome = () => {
     const dispatch = useDispatch();
@@ -54,7 +56,10 @@ const Welcome = () => {
                             id="direct-btn"
                             onClick={() => dispatch(openModal())}
                         >
-                            <i className="fa-solid fa-message mr-2"></i>
+                            <FontAwesomeIcon
+                                icon={faMessage}
+                                className="mr-2"
+                            />
                             Liên hệ ngay
                         </span>
                     </div>

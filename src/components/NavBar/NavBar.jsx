@@ -4,6 +4,12 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { openModal } from '../../redux/modalSlice';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faMessage,
+    faHome,
+    faCartShopping,
+} from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
     const dispatch = useDispatch();
@@ -36,7 +42,10 @@ const NavBar = () => {
                     }}
                     className="flex text-gray-600 font-semibold text-md hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
                 >
-                    <i className="fa-solid text-2xl md:text-base fa-home"></i>
+                    <FontAwesomeIcon
+                        icon={faHome}
+                        className="text-2xl md:text-base py-1"
+                    />
                     <span className="hidden md:inline-block ml-2">
                         Trang chủ
                     </span>
@@ -46,11 +55,10 @@ const NavBar = () => {
                     smooth={true}
                     className="font-sans flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
-                    <i
-                        className={
-                            'fa-solid text-2xl md:text-base fa-cart-shopping'
-                        }
-                    ></i>
+                    <FontAwesomeIcon
+                        icon={faCartShopping}
+                        className="text-2xl md:text-base py-1"
+                    />
                     <span className="hidden md:inline-block ml-2">
                         Sản phẩm
                     </span>
@@ -59,7 +67,10 @@ const NavBar = () => {
                     onClick={() => dispatch(openModal())}
                     className="flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
-                    <i className="fa-solid text-2xl md:text-base fa-message"></i>
+                    <FontAwesomeIcon
+                        icon={faMessage}
+                        className="text-2xl md:text-base py-1"
+                    />
                     <span className="hidden md:inline-block ml-2">Liên hệ</span>
                 </Box>
             </div>

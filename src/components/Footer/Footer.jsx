@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
@@ -69,7 +71,10 @@ const Footer = () => {
                             />
                         </div>
                         <button className="bg-red-700 text-white px-4 py-4 rounded-full font-bold md:w-[240px] md:h-[48px] md:ml-4 md:py-2 lg:w-[140px] lg:ml-0 hover:drop-shadow-xl transition-all ease-in-out">
-                            <i className=" fa-solid fa-paper-plane mr-2"></i>
+                            <FontAwesomeIcon
+                                icon={faPaperPlane}
+                                className="mr-2"
+                            />
                             Đăng ký
                         </button>
                     </div>
