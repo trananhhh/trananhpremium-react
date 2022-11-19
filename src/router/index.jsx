@@ -5,7 +5,7 @@ import Commitments from '../components/Commitments/Commitments';
 import ContactModal from '../components/ContactModal/ContactModal';
 import FloatLogo from '../components/FloatLogo/FloatLogo';
 import Footer from '../components/Footer/Footer';
-import Loading from '../components/Loading/Loading';
+// import Loading from '../components/Loading/Loading';
 import { useDispatch, useSelector } from 'react-redux';
 import Members from '../components/Members/Members';
 import NavBar from '../components/NavBar/NavBar';
@@ -22,7 +22,7 @@ const AppRouter = () => {
     const location = useLocation();
     const [renderRoute, setRenderRoute] = useState([]);
     const isModalOpen = useSelector((state) => state.modal.isModalOpen);
-    const isLoading = useSelector((state) => state.ui.isLoading);
+    // const isLoading = useSelector((state) => state.ui.isLoading);
 
     useEffect(() => {
         scroll.scrollToTop();
@@ -45,7 +45,7 @@ const AppRouter = () => {
     return (
         <div className="overflow-x-hidden">
             {location.pathname !== '/' && <FloatLogo className="md:hidden" />}
-            {isLoading && <Loading />}
+            {/* {isLoading && <Loading />} */}
             <NavBar />
             <Routes>
                 <Route path={'/'} element={<Home />} />
