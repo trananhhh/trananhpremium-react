@@ -16,6 +16,7 @@ import Home from '../view/home';
 
 import data from '../data.json';
 import { closeModal } from '../redux/modalSlice';
+import PolicyBoxTestIOS from '../components/PolicyBoxTestIOS/PolicyBoxTestIOS';
 
 const AppRouter = () => {
     const dispatch = useDispatch();
@@ -49,6 +50,7 @@ const AppRouter = () => {
             <NavBar />
             <Routes>
                 <Route path={'/'} element={<Home />} />
+                <Route path={'/test-ios'} element={<PolicyBoxTestIOS />} />
                 {renderRoute}
             </Routes>
             <Products />
