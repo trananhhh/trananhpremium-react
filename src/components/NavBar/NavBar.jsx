@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <div
             id="navbar"
-            className="fixed h-24 md:top-0 bottom-0 inset-x-4 mx-auto items-center justify-center z-10 transition-all flex drop-shadow-[0_0_12px_rgba(0,0,0,0.3)]"
+            className="fixed h-28 md:top-0 bottom-0 inset-x-4 mx-auto items-center justify-center z-10 transition-all flex drop-shadow-[0_0_12px_rgba(0,0,0,0.3)]"
         >
             <div className="center rounded-full bg-white p-2 shadow-lg flex bg-opacity-90">
                 <div className="cursor-default mx-auto h-10 self-center pr-1 hidden md:flex">
