@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
                     <p className="border-l-4 border-red-700 text-lg tracking-tight italic leading-6 text-justify bg-gray-200 rounded-2xl p-6">
                         Sứ mệnh của
-                        <span className="font-[billCorp] pt-2 py-1 rounded-xl opacity-90 mx-2">
+                        <span className="font-[billCorp] pt-2 py-1 opacity-90 mx-2">
                             trananh
                             <span className="opacity-80 ml-0 pl-0">
                                 premium
@@ -76,7 +76,7 @@ const Footer = () => {
             <br />
             <span className="text-xs md:text-base text-gray-600 pb-12 pt-8 px-12 text-center mb-20 lg:mb-0">
                 © 2020 by
-                <span className="font-[billCorp] rounded-xl opacity-90 ml-1">
+                <span className="font-[billCorp] opacity-90 ml-1">
                     trananh
                     <span className="opacity-80 ml-0 pl-0">premium</span>
                 </span>

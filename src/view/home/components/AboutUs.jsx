@@ -31,7 +31,7 @@ const AboutUs = () => {
                         <br />
                         <br />
                         Do đó,
-                        <span className="font-[billCorp] md:text-xl rounded-xl opacity-90 mx-1">
+                        <span className="font-[billCorp] md:text-xl opacity-90 mx-1">
                             trananh
                             <span className="opacity-80 ml-0 pl-0">
                                 premium
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
                     <i className="text-red-600 mr-2 fa-solid fa-circle-check"></i>
                     Được bảo hành bởi
-                    <span className="font-[billCorp] pt-2 py-1 rounded-xl opacity-90 mx-1">
+                    <span className="font-[billCorp] pt-2 py-1 opacity-90 mx-1">
                         trananh
                         <span className="opacity-80 ml-0 pl-0">premium</span>
                     </span>

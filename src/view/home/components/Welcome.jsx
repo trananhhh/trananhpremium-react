@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { openModal } from '../../../redux/modalSlice';
@@ -6,11 +7,12 @@ const Welcome = () => {
     const dispatch = useDispatch();
 
     return (
-        <div
+        <Box
+            bgImage={
+                process.env.PUBLIC_URL + '/assets/backgrounds/section-1.png'
+            }
             className={
-                'section bg-[url(' +
-                process.env.PUBLIC_URL +
-                "'/assets/backgrounds/section-1.png')] bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex-col pt-[24vh] flex lg:pt-0 lg:justify-center"
+                'bg-no-repeat bg-cover bg-bottom min-h-[110vh] flex-col pt-[24vh] flex lg:pt-0 lg:justify-center'
             }
             id="welcome"
         >
@@ -25,7 +27,6 @@ const Welcome = () => {
                             process.env.PUBLIC_URL + '/assets/logo-no-text.png'
                         }
                         alt="logo-no-text"
-                        srcSet=""
                         draggable="false"
                     />
                 </div>
@@ -59,7 +60,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Box>
     );
 };
 
