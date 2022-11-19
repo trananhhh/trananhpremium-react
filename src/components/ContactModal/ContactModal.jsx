@@ -11,6 +11,7 @@ import {
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import ButtonWithIcon from '../ButtonWithIcon/ButtonWithIcon';
+import { Player } from '@lottiefiles/react-lottie-player';
 import './index.scss';
 
 const ContactModal = ({ isOpen, onClose }) => {
@@ -34,7 +35,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
-                    <lottie-player
+                    <Player
                         src={
                             process.env.PUBLIC_URL +
                             '/assets/lottie/contact.json'
@@ -44,7 +45,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                         style={{ width: '100%' }}
                         loop
                         autoplay
-                    ></lottie-player>
+                    ></Player>
                     <Stack marginTop="12px">
                         <ButtonWithIcon
                             text="Messenger"

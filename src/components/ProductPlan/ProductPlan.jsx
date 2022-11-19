@@ -22,7 +22,11 @@ const ProductPlan = ({
     const dispatch = useDispatch();
     return (
         <div className="md:mx-4">
-            <Accordion allowMultiple allowToggle className="product-plans">
+            <Accordion
+                allowMultiple
+                allowToggle
+                className="product-plans min-w-"
+            >
                 <AccordionItem>
                     <AccordionButton
                         className="product-plan md:min-w-[360px]"

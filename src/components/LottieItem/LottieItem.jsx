@@ -1,6 +1,5 @@
 import React from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
-// import Lottie from 'react-lottie-player';
 
 const LottieItem = ({ titleF, titleS, subtitle, mediaSrc, width, height }) => {
     return (
