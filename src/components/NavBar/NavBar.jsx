@@ -10,6 +10,7 @@ import {
     faHome,
     faCartShopping,
 } from '@fortawesome/free-solid-svg-icons';
+import { loading } from '../../redux/uiSlice';
 
 const NavBar = () => {
     const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const NavBar = () => {
                 </div>
                 <div
                     onClick={() => {
+                        dispatch(loading());
                         navigate('/');
                     }}
                     className="flex text-gray-600 font-semibold text-md hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"

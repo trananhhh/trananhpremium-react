@@ -14,7 +14,6 @@ export const uiSlice = createSlice({
         },
         loading: (state) => {
             state.isLoading = true;
-            // setTimeout(() => this.setLoaded(), 2000);
         },
         setLoaded: (state) => {
             state.isLoading = false;
@@ -22,6 +21,6 @@ export const uiSlice = createSlice({
     },
 });
 
-export const { renderCountUp, loading } = uiSlice.actions;
+export const { renderCountUp, loading, setLoaded } = uiSlice.actions;
 
 export default uiSlice.reducer;

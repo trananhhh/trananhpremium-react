@@ -6,7 +6,9 @@ import {
     StatNumber,
 } from '@chakra-ui/react';
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { loading } from '../../redux/uiSlice';
 
 export default function HomeProductItem({
     insta,
@@ -16,14 +18,17 @@ export default function HomeProductItem({
     price,
     oldPrice,
 }) {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     return (
         <div
             className="product-item cursor-pointer text-gray-200"
             onClick={() => {
-                if (route != null && route !== undefined) navigate(route);
-                else
+                if (route != null && route !== undefined) {
+                    dispatch(loading());
+                    navigate(route);
+                } else
                     window
                         .open(`https://www.instagram.com/${insta}/`, '_blank')
                         .focus();
