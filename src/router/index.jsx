@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { animateScroll as scroll } from 'react-scroll';
 import Commitments from '../components/Commitments/Commitments';
 import ContactModal from '../components/ContactModal/ContactModal';
 import FloatLogo from '../components/FloatLogo/FloatLogo';
 import Footer from '../components/Footer/Footer';
 import Loading from '../components/Loading/Loading';
-import { useDispatch, useSelector } from 'react-redux';
 import Members from '../components/Members/Members';
 import NavBar from '../components/NavBar/NavBar';
 import Products from '../components/Products/Products';
