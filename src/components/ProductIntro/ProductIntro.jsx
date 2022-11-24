@@ -2,9 +2,9 @@ import { Box, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import './index.scss';
 
-const ProductIntro = ({ title, subtitle, description, imageSrc }) => {
+const ProductIntro = ({ title, subtitle, description, imageSrc, ...props }) => {
     return (
-        <Box className="product-intro">
+        <Box className={'product-intro ' + props.className ?? ''}>
             <Box className="header relative">
                 <Box className="header__text">
                     <h2 className="title">{title}</h2>

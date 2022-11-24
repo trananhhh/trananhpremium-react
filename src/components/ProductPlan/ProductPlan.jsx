@@ -18,6 +18,7 @@ const ProductPlan = ({
     description,
     pricing,
     primaryColor,
+    ...props
 }) => {
     const dispatch = useDispatch();
     return (
@@ -25,7 +26,7 @@ const ProductPlan = ({
             <Accordion
                 allowMultiple
                 allowToggle
-                className="product-plans min-w-"
+                className={'product-plans  ' + props.className ?? ''}
             >
                 <AccordionItem>
                     <AccordionButton

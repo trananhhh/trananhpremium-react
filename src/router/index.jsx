@@ -10,6 +10,7 @@ import Members from '../components/Members/Members';
 import NavBar from '../components/NavBar/NavBar';
 import Products from '../components/Products/Products';
 import Statistics from '../components/Statistics/Statistics';
+import { animateScroll as scroll } from 'react-scroll';
 import DetailsPage from '../view/details';
 import Home from '../view/home';
 
@@ -28,8 +29,9 @@ const AppRouter = () => {
     useEffect(() => {
         setTimeout(dispatch(loading()), 1000);
         dispatch(setLoaded());
-        // scroll.scrollToTop();
         window.scrollTo(0, 0);
+        // window.scrollTo(0, 500);
+        // scroll.scrollToTop();
     }, [location, dispatch]);
 
     useEffect(() => {

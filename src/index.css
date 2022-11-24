@@ -25,6 +25,8 @@
     --green-grammarly: #0dc49b;
     --red-netflix: #e50a15;
     --blue-google: #4285f4;
+    --neumorphism: 28px 28px 42px #cecece, -28px -28px 42px #ffffff;
+    --neumorphism-sm: 12px 12px 24px #cecece, -12px -12px 24px #ffffff;
 }
 
 body::-webkit-scrollbar {
