@@ -14,7 +14,7 @@ const Welcome = () => {
                 process.env.PUBLIC_URL + '/assets/backgrounds/section-1.webp'
             }
             className={
-                'bg-no-repeat bg-cover bg-bottom h-screen flex-col pt-[24vh] flex lg:pt-0 lg:justify-center'
+                'bg-no-repeat bg-cover bg-bottom h-[110vh] flex-col pt-[24vh] flex lg:pt-0 lg:justify-center '
             }
         >
             <div className="flex flex-col justify-center ml-6 md:ml-10 lg:flex-row lg:mt-[-6rem]">

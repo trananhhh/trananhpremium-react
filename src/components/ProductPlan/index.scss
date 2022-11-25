@@ -20,7 +20,8 @@
     max-width: 360px;
     margin-top: 24px;
     overflow: hidden;
-    box-shadow: var(--neumorphism);
+    // box-shadow: var(--neumorphism);
+    box-shadow: var(--neumorphism-sm);
     .header {
         display: flex;
         align-items: center;

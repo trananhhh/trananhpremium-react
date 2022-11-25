@@ -10,13 +10,15 @@ import Members from '../components/Members/Members';
 import NavBar from '../components/NavBar/NavBar';
 import Products from '../components/Products/Products';
 import Statistics from '../components/Statistics/Statistics';
-import { animateScroll as scroll } from 'react-scroll';
+// import { animateScroll as scroll } from 'react-scroll';
 import DetailsPage from '../view/details';
 import Home from '../view/home';
 
 import data from '../data.json';
 import { closeModal } from '../redux/modalSlice';
 import { loading, setLoaded } from '../redux/uiSlice';
+import FreeNetflix from '../view/promotion/FreeNetflix';
+import UpdateFreeNetflix from '../view/promotion/UpdateFreeNetflix';
 
 const AppRouter = () => {
     const dispatch = useDispatch();
@@ -55,6 +57,11 @@ const AppRouter = () => {
             <NavBar />
             <Routes>
                 <Route path={'/'} element={<Home />} />
+                <Route
+                    path={'/admin/free-netflix'}
+                    element={<UpdateFreeNetflix />}
+                />
+                <Route path={'/free-netflix'} element={<FreeNetflix />} />
                 {renderRoute}
             </Routes>
             <Products />
