@@ -1,18 +1,10 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Alert, AlertIcon, Box, Button, Image } from '@chakra-ui/react';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { db } from '../../firebase.config';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { addDoc, collection } from 'firebase/firestore';
-import {
-    Alert,
-    AlertIcon,
-    Box,
-    Button,
-    Image,
-    Link,
-    Text,
-} from '@chakra-ui/react';
-import { navigate, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { db } from '../../firebase.config';
 
 const Footer = () => {
     const navigate = useNavigate();

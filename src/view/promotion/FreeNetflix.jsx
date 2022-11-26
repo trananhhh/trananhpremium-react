@@ -8,8 +8,6 @@ import {
     Input,
     InputGroup,
     InputRightElement,
-    Link,
-    LinkBox,
     ListItem,
     Stack,
     Text,
