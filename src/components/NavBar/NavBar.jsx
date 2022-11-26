@@ -1,15 +1,15 @@
 import { Box, Image } from '@chakra-ui/react';
+import {
+    faCartShopping,
+    faHome,
+    faMessage,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { openModal } from '../../redux/modalSlice';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faMessage,
-    faHome,
-    faCartShopping,
-} from '@fortawesome/free-solid-svg-icons';
 import { loading } from '../../redux/uiSlice';
 
 const NavBar = () => {

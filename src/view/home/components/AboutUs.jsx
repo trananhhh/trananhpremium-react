@@ -4,9 +4,9 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs = () => {
     return (
-        <div className="min-h-[75vh] md:min-h-[65vh] flex flex-col mt-[-4rem] max-w-[1200px] mx-auto lg:mt-8 lg:min-h-[50vh] px-8 lg:px-0">
+        <div className="min-h-[75vh] md:min-h-[65vh] flex flex-col mt-[-4rem] md:max-w-3xl lg:max-w-[1200px] mx-auto lg:mt-8 lg:min-h-[50vh] px-8 lg:px-0">
             <div className="grid lg:grid-cols-12 grid-flow-row-dense lg:gap-x-8">
-                <span className="text-center font-bold font-sans mb-4 text-3xl lg:text-4xl md:text-5xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-5 bg z-20 md:ml-8">
+                <span className="text-center font-bold font-sans mb-4 text-3xl md:text-4xl lg:order-2 lg:text-left lg:mb-4 lg:col-span-5 bg z-20 md:ml-8">
                     Về
                     <span className="font-[billCorp] opacity-90 mx-2 font-normal md:font-bold">
                         trananh
@@ -55,21 +55,21 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="flex justify-between mt-8 flex-col items-center lg:flex-row lg:mt-12">
-                <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
+                <p className="font-semibold text-sm tracking-tight md:text-xl">
                     <FontAwesomeIcon
                         icon={faCircleCheck}
                         className="text-red-600 mr-2"
                     />
                     Tài khoản đầy đủ tính năng Premium
                 </p>
-                <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl my-3 lg:mx-6">
+                <p className="font-semibold text-sm tracking-tight md:text-xl my-3 lg:mx-6">
                     <FontAwesomeIcon
                         icon={faCircleCheck}
                         className="text-red-600 mr-2"
                     />
                     Được update liên tục từ nhà phát hành
                 </p>
-                <p className="font-semibold text-sm md:text-2xl tracking-tight lg:text-xl">
+                <p className="font-semibold text-sm tracking-tight md:text-xl">
                     <FontAwesomeIcon
                         icon={faCircleCheck}
                         className="text-red-600 mr-2"
