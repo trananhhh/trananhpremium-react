@@ -25,6 +25,7 @@
         "firebase": "^9.14.0",
         "framer-motion": "^7.6.6",
         "react": "^18.2.0",
+        "react-copy-to-clipboard": "^5.1.0",
         "react-countup": "^6.3.2",
         "react-device-detect": "^2.2.2",
         "react-dom": "^18.2.0",
@@ -42,7 +43,7 @@
     },
     "scripts": {
         "deploy": "npm ci && npm run build",
-        "start": "react-scripts start",
+        "start": "HTTPS=true SSL_CRT_FILE=./.cert/cert.pem SSL_KEY_FILE=./.cert/key.pem react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"

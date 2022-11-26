@@ -18,6 +18,8 @@ import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { doc, getDoc } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
+import CopyToClipboard from 'react-copy-to-clipboard';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { useDispatch } from 'react-redux';
 import { RWebShare } from 'react-web-share';
 import { db } from '../../firebase.config';
@@ -57,13 +59,42 @@ export default function FreeNetflix() {
             .catch((err) => console.error(err));
     };
 
+    const shareDetails = {
+        title: '🎁 Nhận account Netflix miễn phí 🎁',
+        url: 'https://trananhpremium.com/',
+        text: 'Ở đây mỗi ngày đều có account Netflix miễn phí cho mọi người nèeee!',
+    };
+
+    const handleSharing = async () => {
+        if (navigator.share) {
+            try {
+                await navigator
+                    .share(shareDetails)
+                    .then(() =>
+                        console.log(
+                            'Hooray! Your content was shared to tha world'
+                        )
+                    );
+            } catch (error) {
+                console.err(
+                    `Oops! I couldn't share to the world because: ${error}`
+                );
+            }
+        } else {
+            // fallback code
+            console.log(
+                'Web share is currently not supported on this browser. Please provide a callback'
+            );
+        }
+    };
+
     return (
         <Stack
             display="flex"
             justifyContent="center"
             alignItems="center"
             width="100vw"
-            height="85vh"
+            minHeight="90vh"
             bgColor="var(--bg-light)"
         >
             <Box
@@ -79,7 +110,7 @@ export default function FreeNetflix() {
                     bgColor="white"
                     marginBottom="8"
                     marginTop="24"
-                    className="px-4 py-6 md:py-12 w-full rounded-3xl"
+                    className="p-6 md:py-12 w-full rounded-3xl"
                 >
                     <Text
                         mb="6"
@@ -100,22 +131,22 @@ export default function FreeNetflix() {
                             value={email}
                             placeholder="Email"
                             onChange={() => {}}
-                            disabled
                         />
                         <InputRightElement width="4.5rem">
-                            <Button
-                                disabled={!email}
-                                colorScheme="blue"
-                                h="1.75rem"
-                                mr="0.4rem"
-                                size="sm"
-                                onClick={() => {
-                                    navigator.clipboard.writeText(email);
-                                    setIsCopiedEmail(true);
-                                }}
+                            <CopyToClipboard
+                                text={email}
+                                onCopy={() => setIsCopiedEmail(true)}
                             >
-                                {isCopiedEmail ? 'Copied' : 'Copy'}
-                            </Button>
+                                <Button
+                                    disabled={!email}
+                                    colorScheme="blue"
+                                    h="1.75rem"
+                                    mr="0.4rem"
+                                    size="sm"
+                                >
+                                    {isCopiedEmail ? 'Copied' : 'Copy'}
+                                </Button>
+                            </CopyToClipboard>
                         </InputRightElement>
                     </InputGroup>
 
@@ -130,22 +161,22 @@ export default function FreeNetflix() {
                             value={password}
                             placeholder="Password"
                             onChange={() => {}}
-                            disabled
                         />
                         <InputRightElement width="4.5rem">
-                            <Button
-                                disabled={!password}
-                                colorScheme="blue"
-                                h="1.75rem"
-                                mr="0.4rem"
-                                size="sm"
-                                onClick={() => {
-                                    navigator.clipboard.writeText(password);
-                                    setIsCopiedPssw(true);
-                                }}
+                            <CopyToClipboard
+                                text={password}
+                                onCopy={() => setIsCopiedPssw(true)}
                             >
-                                {isCopiedPsswd ? 'Copied' : 'Copy'}
-                            </Button>
+                                <Button
+                                    disabled={!password}
+                                    colorScheme="blue"
+                                    h="1.75rem"
+                                    mr="0.4rem"
+                                    size="sm"
+                                >
+                                    {isCopiedPsswd ? 'Copied' : 'Copy'}
+                                </Button>
+                            </CopyToClipboard>
                         </InputRightElement>
                     </InputGroup>
 
@@ -199,22 +230,38 @@ export default function FreeNetflix() {
                         >
                             Instagram
                         </Button>
-                        <RWebShare
-                            data={{
-                                text: 'Ở đây mỗi ngày đều có account Netflix miễn phí cho mọi người nèeee!',
-                                url: 'https://trananhpremium.com/',
-                                title: '🎁 Nhận account Netflix miễn phí 🎁',
-                            }}
-                            onClick={() => console.log('shared successfully!')}
-                        >
+                        <BrowserView>
+                            <RWebShare
+                                data={{
+                                    text: 'Ở đây mỗi ngày đều có account Netflix miễn phí cho mọi người nèeee!',
+                                    url: 'https://trananhpremium.com/',
+                                    title: '🎁 Nhận account Netflix miễn phí 🎁',
+                                }}
+                                onClick={() =>
+                                    console.log('shared successfully!')
+                                }
+                            >
+                                <Button
+                                    width="100%"
+                                    colorScheme="teal"
+                                    leftIcon={
+                                        <FontAwesomeIcon icon={faShare} />
+                                    }
+                                >
+                                    Chia sẻ ngay
+                                </Button>
+                            </RWebShare>
+                        </BrowserView>
+                        <MobileView style={{ width: '100%' }}>
                             <Button
                                 width="100%"
                                 colorScheme="teal"
                                 leftIcon={<FontAwesomeIcon icon={faShare} />}
+                                onClick={handleSharing}
                             >
                                 Chia sẻ ngay
                             </Button>
-                        </RWebShare>
+                        </MobileView>
                     </Box>
                 </Box>
 
