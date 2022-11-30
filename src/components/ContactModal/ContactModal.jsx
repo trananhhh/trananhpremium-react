@@ -21,7 +21,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
     let insta = 'trananhpremium';
     if (location.pathname === '/netflix') insta = 'trananh.netflixx';
-    if (location.pathname === '/spotify') insta = 'trananh.spotify';
+    // if (location.pathname === '/spotify') insta = 'trananh.spotify';
 
     return (
         <Modal
