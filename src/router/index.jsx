@@ -65,14 +65,14 @@ const AppRouter = () => {
                 {renderRoute}
             </Routes>
             <Products />
-            {location.pathname === '/' ||
-                (location.pathname === '/free-netflix' && (
-                    <>
-                        <Commitments />
-                        <Statistics />
-                        <Members />
-                    </>
-                ))}
+            {(location.pathname === '/' ||
+                location.pathname === '/free-netflix') && (
+                <>
+                    <Commitments />
+                    <Statistics />
+                    <Members />
+                </>
+            )}
             <Footer />
             <ContactModal
                 isOpen={isModalOpen}
