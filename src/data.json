@@ -134,7 +134,7 @@
                 "pricing": [
                     { "duration": 1, "price": 65 },
                     { "duration": 3, "price": 185, "oldPrice": 195 },
-                    { "duration": 6, "price": 370, "oldPrice": 390 },
+                    { "duration": 6, "price": 350, "oldPrice": 390 },
                     { "duration": 12, "price": 660, "oldPrice": 780 }
                 ]
             },
@@ -151,7 +151,7 @@
                 "pricing": [
                     { "duration": 1, "price": 40 },
                     { "duration": 2, "price": 75, "oldPrice": 80 },
-                    { "duration": 3, "price": 140, "oldPrice": 160 }
+                    { "duration": 3, "price": 100, "oldPrice": 120 }
                 ]
             }
         ]
