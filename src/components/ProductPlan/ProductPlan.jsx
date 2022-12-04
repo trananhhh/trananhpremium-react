@@ -30,12 +30,15 @@ const ProductPlan = ({
             >
                 <AccordionItem>
                     <AccordionButton
-                        className="product-plan md:min-w-[360px]"
+                        className={
+                            'product-plan md:min-w-[360px] ' +
+                            (props.isSale ? 'sale' : '')
+                        }
                         style={{ '--props-color': 'var(' + primaryColor + ')' }}
                     >
                         <Box className="container bg-white">
                             <Box className="header">
-                                <span className="name">{name}</span>
+                                <span className="name font-bold">{name}</span>
                                 <span className="price">
                                     {minPrice}.000đ /{' '}
                                     <span className="font-normal">tháng</span>

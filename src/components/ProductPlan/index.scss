@@ -22,13 +22,57 @@
     overflow: hidden;
     // box-shadow: var(--neumorphism);
     box-shadow: var(--neumorphism-sm);
+
+    &.sale {
+        background: radial-gradient(
+                    circle at 100% 100%,
+                    #ffffff 0,
+                    #ffffff 19px,
+                    transparent 19px
+                )
+                0% 0%/23px 23px no-repeat,
+            radial-gradient(
+                    circle at 0 100%,
+                    #ffffff 0,
+                    #ffffff 19px,
+                    transparent 19px
+                )
+                100% 0%/23px 23px no-repeat,
+            radial-gradient(
+                    circle at 100% 0,
+                    #ffffff 0,
+                    #ffffff 19px,
+                    transparent 19px
+                )
+                0% 100%/23px 23px no-repeat,
+            radial-gradient(
+                    circle at 0 0,
+                    #ffffff 0,
+                    #ffffff 19px,
+                    transparent 19px
+                )
+                100% 100%/23px 23px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 8px)
+                calc(100% - 46px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 46px)
+                calc(100% - 8px) no-repeat,
+            linear-gradient(
+                145deg,
+                #c213de 0%,
+                #e93c0d 9.915%,
+                #db0ba8 64.965%,
+                #f81b46 68.292%,
+                #e2052e 100%
+            );
+        padding: 4px;
+    }
     .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .name {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 20px;
         }
 
@@ -46,6 +90,7 @@
     .container {
         padding: 24px;
         width: 100%;
+        border-radius: 22px;
     }
 
     .description {

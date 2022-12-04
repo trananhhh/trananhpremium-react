@@ -191,17 +191,16 @@
         },
         "data": [
             {
-                "name": "Gói Trial",
-                "minPrice": 15,
+                "name": "Gói 3 tháng",
+                "minPrice": 20,
+                "isSale": true,
                 "description": [
                     "👏🏻 Xóa các quảng cáo khỏi video",
                     "👏🏻 Xem video và nghe nhạc ngoại tuyến",
                     "👏🏻 Phát nhạc ngay cả khi khóa màn hình",
-                    "Điều kiện:",
-                    "- Chưa từng sử dụng trước đây",
-                    "- Cung cấp mật khẩu Google"
+                    "👏🏻 Dùng chung Play Music và YouTube Music Premium"
                 ],
-                "pricing": [{ "duration": 4, "price": 60 }]
+                "pricing": [{ "duration": 3, "price": 60 }]
             },
             {
                 "name": "Gói 6 tháng",

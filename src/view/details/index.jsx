@@ -50,6 +50,7 @@ const DetailsPage = ({ productData }) => {
                         description={plan.description}
                         pricing={plan.pricing}
                         primaryColor={productData.primaryColor}
+                        isSale={plan.isSale}
                     />
                 ))}
             </GroupBorder>
