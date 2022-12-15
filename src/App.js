@@ -25,20 +25,4 @@ function App() {
     );
 }
 
-/*
-    {
-        "name": "Gói Trial",
-        "minPrice": 15,
-        "description": [
-            "👏🏻 Xóa các quảng cáo khỏi video",
-            "👏🏻 Xem video và nghe nhạc ngoại tuyến",
-            "👏🏻 Phát nhạc ngay cả khi khóa màn hình",
-            "Điều kiện:",
-            "- Chưa từng sử dụng trước đây",
-            "- Cung cấp mật khẩu Google"
-        ],
-        "pricing": [{ "duration": 4, "price": 60 }]
-    },
-*/
-
 export default App;
