@@ -122,7 +122,7 @@ export default function CMCSecretSanta() {
                         textAlign="center"
                         className="text-base md:text-xl"
                     >
-                        Hãy nhập email dự án của bạn <br />
+                        Hãy nhập email CMC hoặc email dự án của bạn <br />
                         để lấy số thứ tự của món quà bí mật!
                     </Text>
                     <InputGroup
@@ -136,8 +136,8 @@ export default function CMCSecretSanta() {
                             value={ldap}
                             placeholder="abc@cmcglobal.vn"
                             onChange={(e) => {
-                                setLdap(e.target.value);
                                 if (giftCode) setGiftCode();
+                                setLdap(e.target.value);
                             }}
                         />
                         <InputRightElement width="4.5rem"></InputRightElement>
