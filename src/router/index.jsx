@@ -19,6 +19,7 @@ import { closeModal } from '../redux/modalSlice';
 import { loading, setLoaded } from '../redux/uiSlice';
 import FreeNetflix from '../view/promotion/FreeNetflix';
 import UpdateFreeNetflix from '../view/promotion/UpdateFreeNetflix';
+import CMCSecretSanta from '../view/promotion/CMCSecretSanta';
 
 const AppRouter = () => {
     const dispatch = useDispatch();
@@ -58,6 +59,10 @@ const AppRouter = () => {
             <Routes>
                 <Route path={'/'} element={<Home />} />
                 <Route
+                    path={'/collaboration/cmc-global-secret-santa'}
+                    element={<CMCSecretSanta />}
+                />
+                <Route
                     path={'/admin/free-netflix'}
                     element={<UpdateFreeNetflix />}
                 />
@@ -65,14 +70,9 @@ const AppRouter = () => {
                 {renderRoute}
             </Routes>
             <Products />
-            {(location.pathname === '/' ||
-                location.pathname === '/free-netflix') && (
-                <>
-                    <Commitments />
-                    <Statistics />
-                    <Members />
-                </>
-            )}
+            <Commitments />
+            <Statistics />
+            <Members />
             <Footer />
             <ContactModal
                 isOpen={isModalOpen}

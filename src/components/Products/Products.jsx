@@ -10,7 +10,7 @@ const Products = () => {
             id="products"
             bgImage={process.env.PUBLIC_URL + '/assets/backgrounds/bg-dark.svg'}
             className={
-                'bg-no-repeat bg-cover bg-top h-[180vh] md:h-[120vh] lg:h-[145vh] px-8 flex justify-center items-center relative'
+                'bg-no-repeat bg-cover bg-top h-[180vh] md:h-[120vh] lg:h-[155vh] px-8 flex justify-center items-center relative'
             }
         >
             <Element
