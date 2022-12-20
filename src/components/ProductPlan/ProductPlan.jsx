@@ -24,7 +24,6 @@ const ProductPlan = ({
     return (
         <div className="md:mx-4">
             <Accordion
-                allowMultiple
                 allowToggle
                 className={'product-plans  ' + props.className ?? ''}
             >

@@ -23,6 +23,7 @@ function App() {
                     height: '100vh',
                     zIndex: '999',
                 }}
+                snowflakeCount={48}
             />
             <Provider store={store}>
                 <ChakraProvider>

@@ -18,17 +18,7 @@ const DetailsPage = ({ productData }) => {
             alignItems="center"
             bgRepeat="no-repeat"
             bgSize="cover"
-            paddingBottom="30vh"
-            marginBottom="-28vh"
-            // bgImage={
-            //     process.env.PUBLIC_URL + '/assets/cover/' + productData.cover
-            // }
-            style={
-                {
-                    // filter: 'blur(36px)',
-                }
-            }
-            className="backdrop-blur-2xl"
+            paddingBottom="10vh"
         >
             <Cover imageSrc={productData.cover} />
             <ProductIntro

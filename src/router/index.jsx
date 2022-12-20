@@ -20,6 +20,7 @@ import { loading, setLoaded } from '../redux/uiSlice';
 import FreeNetflix from '../view/promotion/FreeNetflix';
 import UpdateFreeNetflix from '../view/promotion/UpdateFreeNetflix';
 import CMCSecretSanta from '../view/promotion/CMCSecretSanta';
+import { Helmet } from 'react-helmet';
 
 const AppRouter = () => {
     const dispatch = useDispatch();
@@ -33,8 +34,6 @@ const AppRouter = () => {
         setTimeout(dispatch(loading()), 1000);
         dispatch(setLoaded());
         window.scrollTo(0, 0);
-        // window.scrollTo(0, 500);
-        // scroll.scrollToTop();
     }, [location, dispatch]);
 
     useEffect(() => {
@@ -55,11 +54,18 @@ const AppRouter = () => {
         <div className="overflow-x-hidden">
             {location.pathname !== '/' && <FloatLogo className="md:hidden" />}
             {isLoading && <Loading />}
+            <Helmet>
+                <meta
+                    property="og:image"
+                    content="%PUBLIC_URL%/thumbnail.png"
+                />
+                <title>𝗧𝗥𝗔𝗡𝗔𝗡𝗛𝗣𝗥𝗘𝗠𝗜𝗨𝗠 - Cung cấp tài khoản bản quyền</title>
+            </Helmet>
             <NavBar />
             <Routes>
                 <Route path={'/'} element={<Home />} />
                 <Route
-                    path={'/collaboration/cmc-global-secret-santa'}
+                    path={'/collaboration/cmc-global/secret-santa'}
                     element={<CMCSecretSanta />}
                 />
                 <Route
@@ -69,7 +75,7 @@ const AppRouter = () => {
                 <Route path={'/free-netflix'} element={<FreeNetflix />} />
                 {renderRoute}
             </Routes>
-            <Products />
+            <Products home={location.pathname === '/'} />
             <Commitments />
             <Statistics />
             <Members />

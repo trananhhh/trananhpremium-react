@@ -37,7 +37,6 @@ export default function PolicyBox({ productData }) {
                 </CardHeader>
                 <CardBody paddingTop="0px" paddingBottom="0px">
                     <Accordion
-                        allowMultiple
                         allowToggle
                         //  reduceMotion={isIOS}
                     >
@@ -196,7 +195,6 @@ export default function PolicyBox({ productData }) {
                             className="px-8"
                         >
                             <Accordion
-                                allowMultiple
                                 allowToggle
                                 // reduceMotion={isIOS}
                             >
