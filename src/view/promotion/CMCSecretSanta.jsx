@@ -1,12 +1,4 @@
-import {
-    Alert,
-    AlertIcon,
-    Box,
-    Button,
-    Image,
-    Input,
-    Text,
-} from '@chakra-ui/react';
+import { Alert, AlertIcon, Box, Button, Image, Text } from '@chakra-ui/react';
 import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import React, { useState } from 'react';
 import AnimatedNumbers from 'react-animated-numbers';
@@ -115,7 +107,6 @@ export default function CMCSecretSanta() {
                     />
                     <Text
                         my="6"
-                        // fontSize="xl"
                         fontWeight="medium"
                         textAlign="center"
                         className="text-base md:text-xl"
@@ -126,13 +117,6 @@ export default function CMCSecretSanta() {
                         <br />
                         để lấy số thứ tự của món quà bí mật!
                     </Text>
-                    {/* <Input
-                        maxWidth="360px"
-                        size="md"
-                        borderColor="blue.500"
-                        mb="4"
-                    /> */}
-
                     <input
                         type="email"
                         value={ldap}
