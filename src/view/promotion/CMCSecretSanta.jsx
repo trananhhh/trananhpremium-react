@@ -1,59 +1,57 @@
-import { Alert, AlertIcon, Box, Button, Image, Text } from '@chakra-ui/react';
-import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
-import React, { useState } from 'react';
-import AnimatedNumbers from 'react-animated-numbers';
+import { Box, Image, Text } from '@chakra-ui/react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import { db } from '../../firebase.config';
 
 export default function CMCSecretSanta() {
-    const [giftCode, setGiftCode] = useState();
-    const [ldap, setLdap] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
+    // const [giftCode, setGiftCode] = useState();
+    // const [ldap, setLdap] = useState('');
+    // const [isLoading, setIsLoading] = useState(false);
 
-    const genGiftCode = async () => {
-        const code = Math.floor(Math.random() * 200);
+    // const genGiftCode = async () => {
+    //     const code = Math.floor(Math.random() * 200);
 
-        const checkGiftCodeQuery = query(
-            collection(db, 'cmcglobal-xmas'),
-            where('giftcode', '==', code)
-        );
+    //     const checkGiftCodeQuery = query(
+    //         collection(db, 'cmcglobal-xmas'),
+    //         where('giftcode', '==', code)
+    //     );
 
-        return await getDocs(checkGiftCodeQuery).then((res) => {
-            if (res.empty) {
-                setGiftCode(code);
-                return code;
-            } else return genGiftCode();
-        });
-    };
+    //     return await getDocs(checkGiftCodeQuery).then((res) => {
+    //         if (res.empty) {
+    //             setGiftCode(code);
+    //             return code;
+    //         } else return genGiftCode();
+    //     });
+    // };
 
-    const getCode = async () => {
-        setIsLoading(true);
-        setGiftCode();
+    // const getCode = async () => {
+    //     setIsLoading(true);
+    //     setGiftCode();
 
-        const q = query(
-            collection(db, 'cmcglobal-xmas'),
-            where('ldap', '==', ldap)
-        );
+    //     const q = query(
+    //         collection(db, 'cmcglobal-xmas'),
+    //         where('ldap', '==', ldap)
+    //     );
 
-        getDocs(q)
-            .then(async (res) => {
-                if (res.empty) {
-                    const newCode = await genGiftCode();
-                    addDoc(collection(db, 'cmcglobal-xmas'), {
-                        ldap: ldap,
-                        giftcode: newCode,
-                    }).catch((err) => console.error(err));
-                } else
-                    res.forEach((doc) => {
-                        const data = doc.data();
-                        setGiftCode(data.giftcode);
-                    });
+    //     getDocs(q)
+    //         .then(async (res) => {
+    //             if (res.empty) {
+    //                 const newCode = await genGiftCode();
+    //                 addDoc(collection(db, 'cmcglobal-xmas'), {
+    //                     ldap: ldap,
+    //                     giftcode: newCode,
+    //                 }).catch((err) => console.error(err));
+    //             } else
+    //                 res.forEach((doc) => {
+    //                     const data = doc.data();
+    //                     setGiftCode(data.giftcode);
+    //                 });
 
-                setIsLoading(false);
-                return;
-            })
-            .catch((err) => console.error(err));
-    };
+    //             setIsLoading(false);
+    //             return;
+    //         })
+    //         .catch((err) => console.error(err));
+    // };
+
     return (
         <Box
             display="flex"
@@ -111,13 +109,10 @@ export default function CMCSecretSanta() {
                         textAlign="center"
                         className="text-base md:text-xl"
                     >
-                        Hãy nhập email CMC
-                        <br />
-                        (hoặc email dự án của bạn)
-                        <br />
-                        để lấy số thứ tự của món quà bí mật!
+                        Thời gian quay số đã kết thúc, <br /> vui lòng lòng quay
+                        lại sau!
                     </Text>
-                    <input
+                    {/* <input
                         type="email"
                         value={ldap}
                         placeholder="abc@cmcglobal.vn"
@@ -129,8 +124,8 @@ export default function CMCSecretSanta() {
                             );
                         }}
                         className="max-w-[360px] rounded-xl mb-4 px-4 py-3 w-full border-blue-200 border-2"
-                    />
-                    {giftCode ? (
+                    /> */}
+                    {/* {giftCode ? (
                         <AnimatedNumbers
                             animateToNumber={giftCode}
                             fontStyle={{
@@ -145,18 +140,18 @@ export default function CMCSecretSanta() {
                                 };
                             }}
                         ></AnimatedNumbers>
-                    ) : (
-                        <Text
-                            fontSize="9xl"
-                            cursor="pointer"
-                            onClick={() => {
-                                if (ldap && !giftCode) getCode();
-                            }}
-                        >
-                            🎁
-                        </Text>
-                    )}
-                    <Button
+                    ) : ( */}
+                    <Text
+                        fontSize="9xl"
+                        // cursor="pointer"
+                        // onClick={() => {
+                        //     if (ldap && !giftCode) getCode();
+                        // }}
+                    >
+                        🎁
+                    </Text>
+                    {/* )} */}
+                    {/* <Button
                         mt="4"
                         isLoading={isLoading}
                         colorScheme="red"
@@ -165,9 +160,9 @@ export default function CMCSecretSanta() {
                         disabled={!ldap || giftCode}
                     >
                         🎁 Nhận quà 🎁
-                    </Button>
+                    </Button> */}
                 </Box>
-                <Alert
+                {/* <Alert
                     maxWidth="640px"
                     width="92vw"
                     status="info"
@@ -179,7 +174,7 @@ export default function CMCSecretSanta() {
                     <AlertIcon />
                     Bạn hãy nhớ mã số này để nhận được đúng món quà thuộc về
                     mình nha!
-                </Alert>
+                </Alert> */}
             </Box>
         </Box>
     );
