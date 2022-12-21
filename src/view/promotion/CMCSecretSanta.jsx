@@ -109,8 +109,8 @@ export default function CMCSecretSanta() {
                         textAlign="center"
                         className="text-base md:text-xl"
                     >
-                        Thời gian quay số đã kết thúc, <br /> vui lòng lòng quay
-                        lại sau!
+                        Thời gian quay số đã kết thúc, <br /> vui lòng quay lại
+                        sau!
                     </Text>
                     {/* <input
                         type="email"
