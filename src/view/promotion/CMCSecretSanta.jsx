@@ -126,17 +126,22 @@ export default function CMCSecretSanta() {
                         <br />
                         để lấy số thứ tự của món quà bí mật!
                     </Text>
-                    <Input
+                    {/* <Input
                         maxWidth="360px"
                         size="md"
                         borderColor="blue.500"
                         mb="4"
+                    /> */}
+
+                    <input
+                        type="email"
                         value={ldap}
                         placeholder="abc@cmcglobal.vn"
                         disabled={giftCode}
                         onChange={(e) => {
                             setLdap(e.target.value || e.currentTarget.value);
                         }}
+                        className="max-w-[360px] rounded-xl mb-4 px-4 py-3 w-full border-blue-200 border-2"
                     />
                     {giftCode ? (
                         <AnimatedNumbers
