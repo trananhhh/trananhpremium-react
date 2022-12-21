@@ -5,8 +5,6 @@ import {
     Button,
     Image,
     Input,
-    InputGroup,
-    InputRightElement,
     Text,
 } from '@chakra-ui/react';
 import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
@@ -122,26 +120,24 @@ export default function CMCSecretSanta() {
                         textAlign="center"
                         className="text-base md:text-xl"
                     >
-                        Hãy nhập email CMC hoặc email dự án của bạn <br />
+                        Hãy nhập email CMC
+                        <br />
+                        (hoặc email dự án của bạn)
+                        <br />
                         để lấy số thứ tự của món quà bí mật!
                     </Text>
-                    <InputGroup
+                    <Input
                         maxWidth="360px"
                         size="md"
                         borderColor="blue.500"
                         mb="4"
-                    >
-                        <Input
-                            pr="4.5rem"
-                            value={ldap}
-                            placeholder="abc@cmcglobal.vn"
-                            onChange={(e) => {
-                                if (giftCode) setGiftCode();
-                                setLdap(e.target.value);
-                            }}
-                        />
-                        <InputRightElement width="4.5rem"></InputRightElement>
-                    </InputGroup>
+                        value={ldap}
+                        placeholder="abc@cmcglobal.vn"
+                        disabled={giftCode}
+                        onChange={(e) => {
+                            setLdap(e.target.value || e.currentTarget.value);
+                        }}
+                    />
                     {giftCode ? (
                         <AnimatedNumbers
                             animateToNumber={giftCode}

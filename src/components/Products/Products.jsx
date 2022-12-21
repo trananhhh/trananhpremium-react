@@ -15,19 +15,19 @@ const Products = ({ home }) => {
             className={
                 home
                     ? 'bg-no-repeat bg-cover bg-top h-[180vh] md:h-[120vh] lg:h-[155vh] px-8 flex justify-center items-center relative z-10'
-                    : 'flex items-center justify-center flex-col p-3'
+                    : 'flex items-center justify-center flex-col p-3 relative'
             }
         >
             <Box
                 className={
                     home
                         ? ''
-                        : 'bg-zinc-900 rounded-3xl px-4 pt-20 pb-10 md:pb-10 w-full md:px-10 max-w-[1280px] mx-auto'
+                        : 'bg-zinc-900 rounded-3xl px-4 pt-6 md:pt-20 pb-10 md:pb-10 w-full md:px-10 max-w-[1280px] mx-auto'
                 }
             >
                 <Element
                     name="Products"
-                    className="h-4 w-4 absolute top-40 md:top-48 "
+                    className="h-4 w-4 absolute top-[-10vh]"
                 ></Element>
                 <Box className="flex-col flex justify-center items-center pt-8 md:max-w-3xl lg:max-w-[1200px] mx-auto lg:pt-0 w-full">
                     <div className="top-container flex items-center justify-center w-full">
