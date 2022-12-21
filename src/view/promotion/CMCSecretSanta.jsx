@@ -123,14 +123,20 @@ export default function CMCSecretSanta() {
                         placeholder="abc@cmcglobal.vn"
                         disabled={giftCode}
                         onChange={(e) => {
-                            setLdap(e.target.value || e.currentTarget.value);
+                            setLdap(
+                                e.target.value.toLowerCase() ||
+                                    e.currentTarget.value.toLowerCase()
+                            );
                         }}
                         className="max-w-[360px] rounded-xl mb-4 px-4 py-3 w-full border-blue-200 border-2"
                     />
                     {giftCode ? (
                         <AnimatedNumbers
                             animateToNumber={giftCode}
-                            fontStyle={{ fontSize: 128, fontWeight: 'bold' }}
+                            fontStyle={{
+                                fontSize: 128,
+                                fontWeight: 'bold',
+                            }}
                             configs={(number, index) => {
                                 return {
                                     mass: 1,

@@ -18,10 +18,10 @@ const AboutUs = () => {
                         boxShadow:
                             '28px 28px 42px #cecece, -28px -28px 42px #ffffff',
                     }}
-                    className="rounded-3xl overflow-hidden my-8 transition-all lg:order-1 lg:row-span-2 lg:h-full lg:my-0 lg:col-span-7 z-10"
+                    className="rounded-3xl overflow-hidden my-8 transition-all lg:order-1 lg:row-span-2 lg:h-96 lg:my-0 lg:col-span-7 z-10"
                 >
                     <img
-                        className="lg:object-cover md:h-[100%]"
+                        className="lg:object-cover md:min-h-full"
                         src={process.env.PUBLIC_URL + '/assets/banner.webp'}
                         alt="banner"
                         srcSet=""

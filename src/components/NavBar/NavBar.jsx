@@ -21,8 +21,8 @@ const NavBar = () => {
             id="navbar"
             className="fixed h-28 md:top-0 bottom-0 inset-x-4 mx-auto items-center justify-center z-50 transition-all flex drop-shadow-[0_0_12px_rgba(0,0,0,0.3)]"
         >
-            <div className="center rounded-full bg-white p-2 shadow-lg flex bg-opacity-90">
-                <div className="cursor-default h-10 self-center hidden md:inline-flex max-w-xl mr-1">
+            <div className="rounded-full bg-white p-2 shadow-lg flex bg-opacity-90 max-w-xl">
+                <div className="cursor-default h-10 hidden md:inline-flex mr-1 max-w-fit w-max">
                     <Image
                         className="my-[1px]"
                         src={
@@ -42,7 +42,7 @@ const NavBar = () => {
                         dispatch(loading());
                         navigate('/');
                     }}
-                    className="inline-flex text-gray-600 font-semibold text-md hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
+                    className="min-w-fit inline-flex text-gray-600 font-semibold text-md hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition  cursor-pointer"
                 >
                     <FontAwesomeIcon
                         icon={faHome}
@@ -55,7 +55,7 @@ const NavBar = () => {
                 <Link
                     to="Products"
                     smooth={true}
-                    className="font-sans inline-flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
+                    className="min-w-fit font-sans inline-flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
                     <FontAwesomeIcon
                         icon={faCartShopping}
@@ -67,7 +67,7 @@ const NavBar = () => {
                 </Link>
                 <Box
                     onClick={() => dispatch(openModal())}
-                    className="inline-flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
+                    className="min-w-fit inline-flex text-gray-600 font-semibold text-md  hover:bg-[#686868] hover:text-white px-[16px] md:px-[12px] py-[12px] md:py-2 rounded-full transition cursor-pointer"
                 >
                     <FontAwesomeIcon
                         icon={faMessage}

@@ -1,40 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Commitments from '../components/Commitments/Commitments';
 import ContactModal from '../components/ContactModal/ContactModal';
 import FloatLogo from '../components/FloatLogo/FloatLogo';
 import Footer from '../components/Footer/Footer';
-import Loading from '../components/Loading/Loading';
 import Members from '../components/Members/Members';
 import NavBar from '../components/NavBar/NavBar';
 import Products from '../components/Products/Products';
 import Statistics from '../components/Statistics/Statistics';
-// import { animateScroll as scroll } from 'react-scroll';
 import DetailsPage from '../view/details';
 import Home from '../view/home';
 
+import { Helmet } from 'react-helmet';
 import data from '../data.json';
 import { closeModal } from '../redux/modalSlice';
-import { loading, setLoaded } from '../redux/uiSlice';
+import CMCSecretSanta from '../view/promotion/CMCSecretSanta';
 import FreeNetflix from '../view/promotion/FreeNetflix';
 import UpdateFreeNetflix from '../view/promotion/UpdateFreeNetflix';
-import CMCSecretSanta from '../view/promotion/CMCSecretSanta';
-import { Helmet } from 'react-helmet';
 
 const AppRouter = () => {
     const dispatch = useDispatch();
     const location = useLocation();
     const [renderRoute, setRenderRoute] = useState([]);
-    // const [isLoading, setIsLoading] = useState(false);
     const isModalOpen = useSelector((state) => state.modal.isModalOpen);
-    const isLoading = useSelector((state) => state.ui.isLoading);
 
-    useEffect(() => {
-        setTimeout(dispatch(loading()), 1000);
-        dispatch(setLoaded());
+    useLayoutEffect(() => {
         window.scrollTo(0, 0);
-    }, [location, dispatch]);
+    }, [location]);
 
     useEffect(() => {
         let tmpRoute = [];
@@ -53,7 +46,6 @@ const AppRouter = () => {
     return (
         <div className="overflow-x-hidden">
             {location.pathname !== '/' && <FloatLogo className="md:hidden" />}
-            {isLoading && <Loading />}
             <Helmet>
                 <meta
                     property="og:image"
