@@ -12,7 +12,7 @@
             "productName": "Spotify",
             "route": "/spotify",
             "image": "spotify.webp",
-            "price": 19,
+            "price": 25,
             "oldPrice": 59
         },
 
